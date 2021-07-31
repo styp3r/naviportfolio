@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.guideAnimation, .overlay{
+  position: absolute;
+}
+
+.blurStatic{
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.blur{
+  animation: 4s linear blurGuide;
+}
+
+@keyframes blurGuide {
+  from {  filter: blur(0px);
+  -webkit-filter: blur(0px);}
+  to {  filter: blur(3px);
+  -webkit-filter: blur(3px);}
+}
+
+.overlay{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  top: 50%;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+h1, h3{
+  color: white;
+}
