@@ -102,11 +102,13 @@ body{
 .navBar > div{
   margin-left: 40px;
   color: white;
+  user-select: none;
 }
 
-.contactButton:hover{
+.navBar > div:hover{
   cursor: pointer;
 }
+
 
 .blurStatic{
   filter: blur(5px);
