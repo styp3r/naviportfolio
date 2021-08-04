@@ -1,5 +1,6 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
+console.log(width);
 console.log(height);
 $(".landingSection").css("height", height);
 $(".landingSection").css("width", width);
@@ -83,4 +84,32 @@ $(".contactButton").hover(()=>{
 }, ()=>{
   $(".rotate").css("transitionDuration", "0.5s");
   $(".rotate").css("backgroundColor", "#ffffff");
+});
+
+$(".btn").click(()=> {
+  $(".pictureBg").animate({
+    marginTop: "0px",
+    height: "140px"
+  }, 500);
+
+  $(".leftBg").animate({
+    width: "200px",
+    marginRight: "0px"
+  });
+
+  $(".l1").animate({
+    marginRight: "150px"
+  });
+
+  $(".l2").animate({
+    marginLeft: "150px"
+  });
+
+  $(".sq1").animate({
+    marginRight: "140px"
+  });
+
+  $(".sq2").animate({
+    marginRight: "140px"
+  });
 });
