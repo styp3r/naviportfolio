@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function Button() {
+    let interval;
+    let flag = 0;
+
   function handleClick() {
     setTimeout(() => {
       window.open("https://www.google.com");
@@ -14,24 +17,47 @@ export default function Button() {
           id="button"
           onMouseOver={() => {
             document.getElementById("button").style.width = "11vmin";
+            document.getElementById("button").style.transitionDuration = "0.5s";
+            interval = setTimeout(()=>{
+                flag = 1;
+                document.getElementById("button").style.width = "8vmin";
+                document.getElementById("button").style.height = "8vmin";
+                document.getElementById("button").style.borderRadius = "100%";
+                document.getElementById("button").style.transitionDuration = "0.5s";
+            }, 700);
           }}
           onMouseOut={() => {
-            document.getElementById("button").style.width = "10vmin";
+                clearInterval(interval);
+                document.getElementById("button").style.width = "10vmin";
+                document.getElementById("button").style.height = "2vmin";
+                document.getElementById("button").style.borderRadius = "2vmin";
+                document.getElementById("button").style.transitionDuration = "0.5s";
           }}
           onMouseUp={() => {
-            document.getElementById("button").style.backgroundColor = "#ffffff";
-            document.getElementById("button").style.boxShadow = "none";
-            document.getElementById("button").style.transitionDuration = "0.5s";
-            document.getElementById("button").style.width = "10vmin";
+                document.getElementById("button").style.backgroundColor = "#ffffff";
+                document.getElementById("button").style.boxShadow = "none";
+                document.getElementById("button").style.transitionDuration = "0.2s";
+                document.getElementById("button").style.width = "10vmin";
+                document.getElementById("button").style.height = "2vmin";
+                document.getElementById("button").style.borderRadius = "2vmin";
+                flag = 0;
           }}
           onMouseDown={() => {
-            document.getElementById("button").style.backgroundColor = "#80dfff";
-            document.getElementById("button").style.width = "9vmin";
-            document.getElementById("button").style.boxShadow =
-              "0 0 8vmin 2vmin #007a99";
-            document.getElementById("button").style.transitionDuration = "0.1s";
+            clearInterval(interval);
+              if(flag == 1){
+                document.getElementById("button").style.width = "9vmin";
+                document.getElementById("button").style.height = "9vmin";
+                document.getElementById("button").style.borderRadius = "100%";
+                document.getElementById("button").style.boxShadow = "0 0 20px 5px #007a99";
+                document.getElementById("button").style.transitionDuration = "0.2s";
+              } else {
+                document.getElementById("button").style.backgroundColor = "#80dfff";
+                document.getElementById("button").style.width = "8vmin";
+                document.getElementById("button").style.boxShadow = "0 0 20px 5px #007a99";
+                document.getElementById("button").style.transitionDuration = "0.2s";
+              }
           }}
-          onClick={handleClick}
+        onClick = {handleClick}
         ></div>
       </div>
     </div>
