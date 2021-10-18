@@ -16,11 +16,12 @@ code {
 }
 
 #button {
+  position: absolute;
   width: 10vmin;
   height: 2vmin;
   background-color: #ffffff;
   border-radius: 2vmin;
-  margin: 10vmin 0 0 50%;
+  margin: 20vmax 0 0 50%;
   transform: translateX(-50%);
 }
 
@@ -31,4 +32,53 @@ code {
 .font{
   color: #ffffff;
 }
+
+.blurBox{
+  position: absolute;
+  width: 10vmax;
+  height: 10vmax;
+  border-radius: 100%;
+  background-color: aqua;
+  filter: blur(50px);
+  opacity: 0.5;
+  margin: 2vmin 0 0 38%;
+  transform: translateX(-50%);
+}
+
+.blurBox1{
+  position: absolute;
+  width: 17vmax;
+  height: 17vmax;
+  border-radius: 100%;
+  background-color: aqua;
+  filter: blur(45px);
+  opacity: 0.5;
+  margin: 18vmin 0 10vmin 55%;
+  transform: translateX(-50%);
+}
+
+.blurBox2{
+  position: absolute;
+  width: 5vmax;
+  height: 5vmax;
+  border-radius: 100%;
+  background-color: aqua;
+  filter: blur(30px);
+  opacity: 0.5;
+  margin: 18vmin 0 0 65%;
+  transform: translateX(-50%);
+}
+
+.tutBox1{
+  position: absolute;
+  background-color: #808080;
+  width: 20vmax;
+  height: 15vmax;
+  opacity: 0.8;
+  border-radius: 1.5vmin;
+  margin: 5vmin 0 0 50%;
+  transform: translateX(-50%);
+}
+
+
 
