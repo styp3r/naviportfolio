@@ -6,8 +6,10 @@ function Tutorial1(){
 
     return (
         <div>
-            <h1 className = "font">Tutorial1</h1>
-            <h1 className = "font">Tap the button</h1>
+            <div className = "tutBox1"></div>          
+            <div className = "blurBox"></div>
+            <div className = "blurBox1"></div>
+            <div className = "blurBox2"></div>
             <Link to = "/tut2"><Button /></Link>
         </div>);
 }
