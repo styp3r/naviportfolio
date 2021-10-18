@@ -6,11 +6,16 @@ function Tutorial1(){
 
     return (
         <div>
-            <div className = "tutBox1"></div>          
+            <div className = "tutBox1 font">
+            <p>Greetings!</p> 
+            <p>Tap the button below to continue</p>
+            <p>when you are ready.</p>
+            <img></img>
+            </div>          
             <div className = "blurBox"></div>
             <div className = "blurBox1"></div>
             <div className = "blurBox2"></div>
-            <Link to = "/tut2"><Button /></Link>
+            <Button askToClick = "true"/>
         </div>);
 }
 

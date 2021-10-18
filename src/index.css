@@ -26,6 +26,10 @@ code {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-name: pulse;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes pulse {
@@ -40,6 +44,39 @@ code {
   100%{
     width: 10vmin;
   }
+}
+
+.circle{
+  background-color: #999999;
+  border-radius: 100%;
+  opacity: 0.5;
+  animation-name: pulseCircle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseCircle{
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 12vmin;
+    height: 12vmin;
+  }
+
+}
+
+.circle1{
+  position: absolute;
+  background-color: #b3b3b3;
+  border-radius: 100%;
+  opacity: 0.5;
+  animation-name: pulseCircle;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 
@@ -63,11 +100,32 @@ code {
   width: 10vmax;
   height: 10vmax;
   border-radius: 100%;
-  background-color: aqua;
+  background-color: #cc66ff;
   filter: blur(50px);
   opacity: 0.5;
   margin: 2vmin 0 0 38%;
   transform: translateX(-50%);
+  animation-name: hoverInPlace;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverInPlace{
+  0% {
+    margin: 2vmin 0 0 38%;
+  }
+  25%{
+    margin: 6vmin 0 0 34%;
+  }
+  50% {
+    margin: 10vmin 0 0 40%;
+  }
+  75%{
+    margin: 8vmin 0 0 30%;
+  }
+  100% {
+    margin: 2vmin 0 0 38%;
+  }
 }
 
 .blurBox1{
@@ -75,11 +133,32 @@ code {
   width: 17vmax;
   height: 17vmax;
   border-radius: 100%;
-  background-color: aqua;
+  background-color: #ff4da6;
   filter: blur(45px);
   opacity: 0.5;
   margin: 18vmin 0 10vmin 55%;
   transform: translateX(-50%);
+  animation-name: hoverInPlace1;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverInPlace1{
+  0% {
+    margin: 18vmin 0 10vmin 55%;
+  }
+  25%{
+    margin: 17vmin 0 0 50%;
+  }
+  50% {
+    margin: 15vmin 0 0 43%;
+  }
+  75%{
+    margin: 12vmin 0 0 57%;
+  }
+  100% {
+    margin: 18vmin 0 10vmin 55%;
+  }
 }
 
 .blurBox2{
@@ -87,21 +166,42 @@ code {
   width: 5vmax;
   height: 5vmax;
   border-radius: 100%;
-  background-color: aqua;
+  background-color: #ff4d4d;
   filter: blur(30px);
   opacity: 0.5;
   margin: 18vmin 0 0 65%;
   transform: translateX(-50%);
+  animation-name: hoverInPlace2;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverInPlace2{
+  0% {
+    margin: 18vmin 0 0 65%;
+  }
+  25%{
+    margin: 20vmin 0 0 66%;
+  }
+  50% {
+    margin: 25vmin 0 0 62%;
+  }
+  75%{
+    margin: 12vmin 0 0 67%;
+  }
+  100% {
+    margin: 18vmin 0 0 65%;
+  }
 }
 
 .tutBox1{
   position: absolute;
   background-color: #808080;
   width: 20vmax;
-  height: 15vmax;
+  height: 10vmax;
   opacity: 0.8;
   border-radius: 1.5vmin;
-  margin: 5vmin 0 0 50%;
+  margin: 10vmin 0 0 50%;
   transform: translateX(-50%);
 }
 
