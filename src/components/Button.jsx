@@ -4,26 +4,19 @@ export default function Button() {
     let interval;
     let flag = 0;
 
-  function handleClick() {
-    setTimeout(() => {
-      window.open("https://www.google.com");
-    }, 500);
-  }
-
   return (
-    <div className="App">
-      <div className="section">
+    <div className="btn">
         <div
           id="button"
           onMouseOver={() => {
             document.getElementById("button").style.width = "11vmin";
-            document.getElementById("button").style.transitionDuration = "0.5s";
+            document.getElementById("button").style.transitionDuration = "0.2s";
             interval = setTimeout(()=>{
                 flag = 1;
                 document.getElementById("button").style.width = "8vmin";
                 document.getElementById("button").style.height = "8vmin";
                 document.getElementById("button").style.borderRadius = "100%";
-                document.getElementById("button").style.transitionDuration = "0.5s";
+                document.getElementById("button").style.transitionDuration = "0.2s";
             }, 700);
           }}
           onMouseOut={() => {
@@ -31,7 +24,7 @@ export default function Button() {
                 document.getElementById("button").style.width = "10vmin";
                 document.getElementById("button").style.height = "2vmin";
                 document.getElementById("button").style.borderRadius = "2vmin";
-                document.getElementById("button").style.transitionDuration = "0.5s";
+                document.getElementById("button").style.transitionDuration = "0.2s";
           }}
           onMouseUp={() => {
                 document.getElementById("button").style.backgroundColor = "#ffffff";
@@ -44,22 +37,18 @@ export default function Button() {
           }}
           onMouseDown={() => {
             clearInterval(interval);
-              if(flag == 1){
+              if(flag === 1){
                 document.getElementById("button").style.width = "9vmin";
                 document.getElementById("button").style.height = "9vmin";
                 document.getElementById("button").style.borderRadius = "100%";
-                document.getElementById("button").style.boxShadow = "0 0 20px 5px #007a99";
                 document.getElementById("button").style.transitionDuration = "0.2s";
               } else {
-                document.getElementById("button").style.backgroundColor = "#80dfff";
+                document.getElementById("button").style.backgroundColor = "#f2f2f2";
                 document.getElementById("button").style.width = "8vmin";
-                document.getElementById("button").style.boxShadow = "0 0 20px 5px #007a99";
                 document.getElementById("button").style.transitionDuration = "0.2s";
               }
           }}
-        onClick = {handleClick}
         ></div>
       </div>
-    </div>
   );
 }
