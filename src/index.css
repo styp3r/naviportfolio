@@ -21,9 +21,9 @@ code {
   height: 2vmin;
   background-color: #ffffff;
   border-radius: 2vmin;
-  margin: 20vmax 0 0 50%;
+  margin: 15vmax 0 0 50%;
   transform: translateX(-50%);
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: pulse;
   overflow: hidden;
@@ -33,52 +33,16 @@ code {
 }
 
 @keyframes pulse {
-  0% {
-    width: 10vmin;
-  }
-
-  50% {
-    width: 11vmin;
-  }
-
-  100%{
-    width: 10vmin;
-  }
+ 0%{
+   width: 10vmin;
+ }
+ 50%{
+   width: 11vmin;
+ }
+ 100%{
+   width: 10vmin;
+ }
 }
-
-.circle{
-  background-color: #999999;
-  border-radius: 100%;
-  opacity: 0.5;
-  animation-name: pulseCircle;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulseCircle{
-  0% {
-    width: 0;
-    height: 0;
-  }
-
-  100% {
-    width: 12vmin;
-    height: 12vmin;
-  }
-
-}
-
-.circle1{
-  position: absolute;
-  background-color: #b3b3b3;
-  border-radius: 100%;
-  opacity: 0.5;
-  animation-name: pulseCircle;
-  animation-delay: 0.5s;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
 
 #button:hover {
   cursor: pointer;
@@ -91,18 +55,15 @@ code {
   }
 }
 
-.font{
-  color: #ffffff;
-}
-
-.blurBox{
+.blurBlob{
   position: absolute;
   width: 10vmax;
   height: 10vmax;
   border-radius: 100%;
   background-color: #cc66ff;
-  filter: blur(50px);
+  filter: blur(40px);
   opacity: 0.5;
+  box-shadow: 0 0 5vmin 2vmin #cc66ff;
   margin: 2vmin 0 0 38%;
   transform: translateX(-50%);
   animation-name: hoverInPlace;
@@ -115,27 +76,28 @@ code {
     margin: 2vmin 0 0 38%;
   }
   25%{
-    margin: 6vmin 0 0 34%;
+    margin: 8vmin 0 0 40%;
   }
   50% {
-    margin: 10vmin 0 0 40%;
+    margin: 10vmin 0 0 32%;
   }
   75%{
-    margin: 8vmin 0 0 30%;
+    margin: 8vmin 0 0 35%;
   }
   100% {
     margin: 2vmin 0 0 38%;
   }
 }
 
-.blurBox1{
+.blurBlob1{
   position: absolute;
   width: 17vmax;
   height: 17vmax;
   border-radius: 100%;
   background-color: #ff4da6;
-  filter: blur(45px);
+  filter: blur(25px);
   opacity: 0.5;
+  box-shadow: 0 0 5vmin 2vmin #ff4da6;
   margin: 18vmin 0 10vmin 55%;
   transform: translateX(-50%);
   animation-name: hoverInPlace1;
@@ -148,28 +110,29 @@ code {
     margin: 18vmin 0 10vmin 55%;
   }
   25%{
-    margin: 17vmin 0 0 50%;
+    margin: 11vmin 0 0 48%;
   }
   50% {
-    margin: 15vmin 0 0 43%;
+    margin: 5vmin 0 0 43%;
   }
   75%{
-    margin: 12vmin 0 0 57%;
+    margin: 1vmin 0 0 57%;
   }
   100% {
     margin: 18vmin 0 10vmin 55%;
   }
 }
 
-.blurBox2{
+.blurBlob2{
   position: absolute;
-  width: 5vmax;
-  height: 5vmax;
+  width: 8vmax;
+  height: 8vmax;
   border-radius: 100%;
   background-color: #ff4d4d;
-  filter: blur(30px);
-  opacity: 0.5;
+  box-shadow: 0 0 5vmin 2vmin #ff4d4d;
+  filter: blur(40px);
   margin: 18vmin 0 0 65%;
+  opacity: 0.5;
   transform: translateX(-50%);
   animation-name: hoverInPlace2;
   animation-duration: 35s;
@@ -181,7 +144,7 @@ code {
     margin: 18vmin 0 0 65%;
   }
   25%{
-    margin: 20vmin 0 0 66%;
+    margin: 12vmin 0 5vmin 66%;
   }
   50% {
     margin: 25vmin 0 0 62%;
@@ -194,16 +157,31 @@ code {
   }
 }
 
-.tutBox1{
+
+.tutMessage1{
   position: absolute;
-  background-color: #808080;
-  width: 20vmax;
-  height: 10vmax;
-  opacity: 0.8;
-  border-radius: 1.5vmin;
-  margin: 10vmin 0 0 50%;
+  bottom: 10vmin;
+  left: 50%;
+  opacity: 0;
   transform: translateX(-50%);
+  animation: 5s infinite changeOpacity;
+  color: #ffffff;
+  animation-delay: 2s;
 }
+
+@keyframes changeOpacity{
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
 
 
 
