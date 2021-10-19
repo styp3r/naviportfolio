@@ -1,21 +1,20 @@
 import React from 'react';
 import Button from './Button';
-import {Link} from 'react-router-dom';
 
 function Tutorial1(){
 
+    function handleClick(){
+        
+    }
+
     return (
         <div>
-            <div className = "tutBox1 font">
-            <p>Greetings!</p> 
-            <p>Tap the button below to continue</p>
-            <p>when you are ready.</p>
-            <img></img>
-            </div>          
-            <div className = "blurBox"></div>
-            <div className = "blurBox1"></div>
-            <div className = "blurBox2"></div>
-            <Button askToClick = "true"/>
+            <p className = "tutMessage1">Tap the button</p>
+            <img></img>        
+            <div className = "blurBlob"></div>
+            <div className = "blurBlob1"></div>
+            <div className = "blurBlob2"></div>
+            <div onClick = {handleClick}><Button /></div>
         </div>);
 }
 
