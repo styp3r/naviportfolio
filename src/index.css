@@ -3,6 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 code {
@@ -10,9 +12,127 @@ code {
     monospace;
 }
 
-.App{
-  margin: 10vmax 0 0 0;
+.heroSection{
+  background-color: #000000;
 }
+
+.heroHeader{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hello{
+  position: absolute;
+  top: 20vmin;
+  display: inline-block;
+  animation: 4s linear appear, 3s linear slideLeft, 5.5s linear glitchOut;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.iAm{
+  position: absolute;
+  top: 20vmin;
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vmin;
+  opacity: 0;
+  animation: 1s linear slideRight, 6s linear disappear;
+  animation-timing-function: ease-in-out;
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+
+.topTextIAm{
+  display: block;
+  text-align: left;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  50%{
+    margin: 0;
+    opacity: 1;
+  }
+  100%{
+    margin: 0 30vmax 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes glitchOut{
+  90%{
+    opacity: 1;
+  }
+  91%{
+    opacity: 0;
+  }
+  92%{
+    opacity: 0;
+  }
+  93%{
+    opacity: 1;
+  }
+  94%{
+    opacity: 0;
+  }
+  95%{
+    opacity: 1;
+  }
+  96%{
+    opacity: 0;
+  }
+  97%{
+    opacity: 1;
+  }
+  98%{
+    opacity: 0;
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes slideRight{
+  0%{
+    margin: 7vmax 0 0 0;
+    opacity: 0;
+  }
+  100%{
+    margin: 7vmax 0 0 25vmax;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear{ 
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
 
 
 
