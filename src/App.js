@@ -1,9 +1,13 @@
 import './App.css';
+import Hero from './components/Hero';
+import Intro from './components/Intro';
 
 function App() {
+
   return (  
     <div className = "App">
-      <h1>Hello</h1>
+    <Hero />
+    <Intro />
     </div>
   );
 }
