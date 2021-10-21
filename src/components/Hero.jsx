@@ -11,6 +11,7 @@ function Hero(){
             <img className = "hello" src = {HelloHeader} width = "500" height="300"/>
             <div className = "iAm"><span className = "topTextIAm">I am </span>Navjyot Jaiswal</div>
         </div>
+        <p className = "whatAmI">Interactive Web Developer</p>
         </div>
     );
 }
