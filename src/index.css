@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Ubuntu', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     overflow-x: hidden;
@@ -10,4 +10,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.heroHeader{
+  position: absolute;
+  top: 8vmax;
+  left: 20vmax;
+  font-family: 'WindSong', cursive;
+  font-size: 5vmin;
+}
+
+.heroText1, .heroText2{
+  font-size: 8vmin;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.grey{
+  color: #A9A9A9;
+}
+
+.leftAlign{
+  text-align: left;
+}
+
+#title{
+  color: #A9A9A9;
+}
+
+.heroContentContainer{
+  position: absolute;
+  left: 20vmax;
+  top: 15vmax;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.slider{
+  position: absolute;
+  background-color: aqua;
+  width: 0;
+  height: 2vmin;
+  margin: 2vmin 0 0 0;
+  opacity: 1;
+  animation: 6s slider;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slider{
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+  50%{
+    width: 15vmax;
+    opacity: 0.5;
+  }
+  100%{
+      width: 0;
+      opacity: 1;
+  }
 }
