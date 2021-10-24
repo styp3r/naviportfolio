@@ -47,29 +47,3 @@ code {
   justify-content: center;
   align-content: center;
 }
-
-.slider{
-  position: absolute;
-  background-color: aqua;
-  width: 0;
-  height: 2vmin;
-  margin: 2vmin 0 0 0;
-  opacity: 1;
-  animation: 6.02s slider;
-  animation-iteration-count: infinite;
-}
-
-@keyframes slider{
-  0%{
-    width: 0;
-    opacity: 1;
-  }
-  50%{
-    width: 15vmax;
-    opacity: 0.5;
-  }
-  100%{
-      width: 0;
-      opacity: 1;
-  }
-}
