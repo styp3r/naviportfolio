@@ -4,34 +4,20 @@ function Hero(){
 
     const [title, setTitle] = useState("Designer");
 
-    function animateTitle(){
-        document.getElementById("title").animate([
-            // keyframes
-            { opacity: 1 },
-            { opacity: 0 }
-          ], {
-            // timing options
-            duration: 3010,
-            iterations: 1
-          });
-    }
 
     let interval = setInterval(()=>{
         if(title === "Designer"){
             setTitle("UI/UX Engineer");
-            animateTitle();
         }
         if(title === "UI/UX Engineer"){
             setTitle("Interactive Architect");
-            animateTitle();
         }
         if(title === "Interactive Architect"){
             setTitle("Designer");
-            animateTitle();
         }
 
         clearInterval(interval);
-    }, 3000);
+    }, 4000);
 
 
 
@@ -42,7 +28,6 @@ function Hero(){
                     <div className = "leftAlign">
                         <h1 className = "heroText1">Front-End Developer</h1>
                         <h1 className = "heroText2"><span className = "grey">+</span><span id = "title"> {title}</span></h1>
-                        <div className = "slider"></div>
                     </div>
                 </div>
             </div>
