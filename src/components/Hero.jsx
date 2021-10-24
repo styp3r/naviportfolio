@@ -11,7 +11,7 @@ function Hero(){
             { opacity: 0 }
           ], {
             // timing options
-            duration: 3100,
+            duration: 3010,
             iterations: 1
           });
     }

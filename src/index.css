@@ -55,7 +55,7 @@ code {
   height: 2vmin;
   margin: 2vmin 0 0 0;
   opacity: 1;
-  animation: 6s slider;
+  animation: 6.02s slider;
   animation-iteration-count: infinite;
 }
 
