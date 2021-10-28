@@ -10,15 +10,16 @@ function Hero(){
             setTitle("UI/UX Engineer");
         }
         if(title === "UI/UX Engineer"){
-            setTitle("Interactive Architect");
+            setTitle("Gamification Architect");
         }
-        if(title === "Interactive Architect"){
+        if(title === "Gamification Architect"){
             setTitle("Designer");
         }
 
         clearInterval(interval);
     }, 4000);
 
+    console.log(window.innerWidth +" "+window.innerHeight);
 
 
     return (        
@@ -27,7 +28,7 @@ function Hero(){
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
                         <h1 className = "heroText1">Front-End Developer</h1>
-                        <h1 className = "heroText2"><span className = "grey">+</span><span id = "title"> {title}</span></h1>
+                        <h1 className = "heroText2"><span className = "aqua">+</span><span id = "title"> {title}</span></h1>
                     </div>
                 </div>
             </div>
