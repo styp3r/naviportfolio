@@ -1,9 +1,10 @@
-import React,  {useState} from 'react';
+import React,  {useEffect, useState} from 'react';
+import Plus from '../images/plusSign.png';
 
 function Hero(){
 
     const [title, setTitle] = useState("Designer");
-
+    const [count, setCount] = useState(0);
 
     let interval = setInterval(()=>{
         if(title === "Designer"){
@@ -15,20 +16,23 @@ function Hero(){
         if(title === "Gamification Architect"){
             setTitle("Designer");
         }
-
         clearInterval(interval);
+        document.getElementById("plus").style.transitionDuration = "0.3s";
+        document.getElementById("plus").style.transform = `rotate(${count}deg)`;
     }, 4000);
 
-    console.log(window.innerWidth +" "+window.innerHeight);
+    useEffect(()=>{
+        setCount(count + 45);
+    }, [title]);
 
 
     return (        
             <div style = {{width: window.innerWidth, height: window.innerHeight }} className = "heroContainer">
-                <h1 className = "heroHeader">Navjyot Jaiswal</h1>
+                <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
                         <h1 className = "heroText1">Front-End Developer</h1>
-                        <h1 className = "heroText2"><span className = "aqua">+</span><span id = "title"> {title}</span></h1>
+                        <h1 className = "heroText2"><img id = "plus" width = "40" height= "40" src = {Plus}/><span id = "title"> {title}</span></h1>
                     </div>
                 </div>
             </div>
