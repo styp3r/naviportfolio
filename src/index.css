@@ -14,10 +14,12 @@ code {
 
 .heroHeader{
   position: absolute;
-  top: 8vmax;
+  top: 11vmax;
   left: 20vmax;
-  font-family: 'WindSong', cursive;
-  font-size: 5vmin;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3vmin;
+  letter-spacing: 2px;
+  color: #808080;
 }
 
 .heroText1, .heroText2{
@@ -25,10 +27,6 @@ code {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   margin: 0;
-}
-
-.aqua{
-  color: #1affff;
 }
 
 .leftAlign{
