@@ -2,6 +2,7 @@ import React from 'react';
 import GlowBall from './GlowBall';
 import BigMonster from './BigMonster';
 import WormHole from './WormHole';
+import BackgroundSquares from './BackgroundSquares';
 
 function InteractiveBackground(){
 
@@ -10,6 +11,7 @@ function InteractiveBackground(){
 
     return (
         <div className = "interactiveContainer" style = {{width: sectionWidth, height: sectionHeight }}>
+            <BackgroundSquares />
             <GlowBall />
             <BigMonster />
             <WormHole />
