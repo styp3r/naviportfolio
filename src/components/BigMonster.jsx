@@ -1,8 +1,11 @@
 function BigMonster(){
     return (
         <div id = "bigMonsterContainer">
+
         <div id ="bigMonsterReflection"></div>
+
         <div id = "bigMonsterBodyReflection"></div>
+
         <div id = "bigMonster">
         <div id = "bigMonsterFace"></div>
             <div id = "bigMonsterLeftEye">
@@ -17,14 +20,11 @@ function BigMonster(){
             </div>
             <div id = "bigMonsterMouth"></div>
         </div>
-        <div id = "bigMonsterBody">
-        <div id = "bigMonsterNeck"></div>
-        <div id = "bigMonsterChest"></div>
-        </div>
-        <div id = "bigMonsterHand">
-            <div id = "bigMonsterUpperArm"></div>
-            <div id = "bigMonsterLowerArm"></div>
-        </div>
+
+            <div id = "bigMonsterBody"></div>
+            <div id = "bigMonsterNeck"></div>
+            <div id = "bigMonsterChest"></div>
+
         </div>
     );
 }
