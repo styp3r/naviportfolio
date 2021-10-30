@@ -4,6 +4,7 @@ function BigMonster(){
         <div id ="bigMonsterReflection"></div>
         <div id = "bigMonsterBodyReflection"></div>
         <div id = "bigMonster">
+        <div id = "bigMonsterFace"></div>
             <div id = "bigMonsterLeftEye">
                 <div id = "leftPupil">
                 <div id = "leftEyeSpark"></div>
@@ -16,7 +17,10 @@ function BigMonster(){
             </div>
             <div id = "bigMonsterMouth"></div>
         </div>
-        <div id = "bigMonsterBody"></div>
+        <div id = "bigMonsterBody">
+        <div id = "bigMonsterNeck"></div>
+        <div id = "bigMonsterChest"></div>
+        </div>
         <div id = "bigMonsterHand">
             <div id = "bigMonsterUpperArm"></div>
             <div id = "bigMonsterLowerArm"></div>
