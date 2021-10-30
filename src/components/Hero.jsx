@@ -1,5 +1,6 @@
 import React,  {useEffect, useState} from 'react';
 import Plus from '../images/plusSign.png';
+import InteractiveBackground from './InteractiveBackground';
 
 function Hero(){
 
@@ -8,9 +9,9 @@ function Hero(){
 
     let interval = setInterval(()=>{
         if(title === "Designer"){
-            setTitle("UI/UX Engineer");
+            setTitle("UI/UX Artificer");
         }
-        if(title === "UI/UX Engineer"){
+        if(title === "UI/UX Artificer"){
             setTitle("Gamification Architect");
         }
         if(title === "Gamification Architect"){
@@ -28,6 +29,7 @@ function Hero(){
 
     return (        
             <div style = {{width: window.innerWidth, height: window.innerHeight }} className = "heroContainer">
+            <InteractiveBackground />
                 <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
