@@ -75,6 +75,20 @@ code {
   height: 35vmax;
   background-color: #b30086;
   border-radius: 10vmin 10vmin 0 0;
+  animation: 3s hoverBigMonster;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverBigMonster{
+  0%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 1vmin;
+  }
+  100%{
+    bottom: 0;
+  }
 }
 
 #bigMonsterFace{
@@ -91,8 +105,8 @@ code {
   position: absolute;
   width: 20vmin;
   height: 10vmin;
-  left: 20%;
-  top: -5%;
+  left: 6%;
+  bottom: 15vmin;
   border-radius: 10vmin;
   background-color: #990073;
 }
@@ -101,10 +115,24 @@ code {
   position: absolute;
   width: 20vmax;
   height: 15vmin;
-  left: 5%;
+  left: 3%;
   bottom: 0;
   border-radius: 10vmin 10vmin 0 0;
   background-color: #990073;
+  animation: 3s hoverBigMonsterChest;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverBigMonsterChest{
+  0%{
+    bottom: -5vmin;
+  }
+  50%{
+    bottom: -4vmin;
+  }
+  100%{
+    bottom: -5vmin;
+  }
 }
 
 #bigMonsterReflection{
@@ -115,6 +143,20 @@ code {
   height: 35vmax;
   background-color: #cccccc;
   border-radius: 10vmin 10vmin 0 0;
+  animation: 3s hoverBigMonsterReflection;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverBigMonsterReflection{
+  0%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 1vmin;
+  }
+  100%{
+    bottom: 0;
+  }
 }
 
 #bigMonsterLeftEye{
@@ -169,46 +211,47 @@ code {
   width: 30vmax;
   height: 12vmax;
   background-color: #b30086;
-  bottom: 0;
+  bottom: -5vmin;
   left: 0;
   border-radius: 0 20vmin 0 0;
+  animation: 3s hoverBigMonsterBody;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverBigMonsterBody{
+  0%{
+    bottom: -5vmin;
+  }
+  50%{
+    bottom: -4vmin;
+  }
+  100%{
+    bottom: -5vmin;
+  }
 }
 
 #bigMonsterBodyReflection{
   position: absolute;
   width: 31vmax;
-  height: 12vmax;
+  height: 12.5vmax;
   background-color: #cccccc;
-  bottom: 0.3vmin;
+  bottom: -10vmin;
   left: -1vmin;
   border-radius: 0 20vmin 0 0;
+  animation: 3s hoverBigMonsterBodyReflection;
+  animation-iteration-count: infinite;
 }
 
-#bigMonsterHand{
-  position: absolute;
-  bottom: -15vmin;
-  left: 20vmax;
-}
-
-#bigMonsterUpperArm{
-  display: inline-block;
-  border-radius: 8vmin;
-  width: 25vmax;
-  height: 10vmax;
-  transform: rotate(45deg);
-  background-color: #b30086;
-}
-
-#bigMonsterLowerArm{
-  position: absolute;
-  left: 12vmax;
-  bottom: 2vmin;
-  display: inline-block;
-  border-radius: 8vmin;
-  width: 25vmax;
-  height: 10vmax;
-  transform: rotate(-45deg);
-  background-color: #b30086;
+@keyframes hoverBigMonsterBodyReflection{
+  0%{
+    bottom: -5vmin;
+  }
+  50%{
+    bottom: -4vmin;
+  }
+  100%{
+    bottom: -5vmin;
+  }
 }
 
 #wormHoleEntry{
