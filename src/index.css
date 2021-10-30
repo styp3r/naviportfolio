@@ -221,6 +221,34 @@ code {
   height: 5vmin;
   background-color: #ff1a75;
   border-radius: 0 0 5vmin 5vmin;
+  animation: 3s 3s shockedStart, 0.6s 6s shockedEnd;
+  animation-iteration-count: 1;
+}
+
+@keyframes shockedStart{
+  0%{
+    width: 12vmin;
+    height: 5vmin;
+    border-radius: 0 0 5vmin 5vmin;
+  }
+  100%{
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 100%;
+  }
+}
+
+@keyframes shockedEnd{
+  0%{
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 100%;
+  }
+  100%{
+    width: 12vmin;
+    height: 5vmin;
+    border-radius: 0 0 5vmin 5vmin;
+  }
 }
 
 #bigMonsterBody{
@@ -230,9 +258,8 @@ code {
   background-color: #b30086;
   bottom: -5vmin;
   left: 0;
-  border-radius: 0 20vmin 0vmin 0;  /*CHANGE 0vmin TO 10vmin to make shoulder animation */ 
-  animation: 3s hoverBigMonsterBody;
-  animation-iteration-count: infinite;
+  border-radius: 0 20vmin 0 0;
+  animation: 3s infinite hoverBigMonsterBody, 10s 2s 1 moveShoulder;
 }
 
 @keyframes hoverBigMonsterBody{
@@ -247,6 +274,15 @@ code {
   }
 }
 
+@keyframes moveShoulder{
+  0%, 100%{
+    border-radius: 0 20vmin 0 0;
+  }
+  50%{
+    border-radius: 0 20vmin 15vmin 0;
+  }
+}
+
 #bigMonsterBodyReflection{
   position: absolute;
   width: 31vmax;
@@ -255,8 +291,7 @@ code {
   bottom: -10vmin;
   left: -1vmin;
   border-radius: 0 20vmin 0 0;
-  animation: 3s hoverBigMonsterBodyReflection;
-  animation-iteration-count: infinite;
+  animation: 3s infinite hoverBigMonsterBodyReflection, 10s 2s 1 moveShoulder1;
 }
 
 @keyframes hoverBigMonsterBodyReflection{
@@ -268,6 +303,15 @@ code {
   }
   100%{
     bottom: -5vmin;
+  }
+}
+
+@keyframes moveShoulder1{
+  0%, 100%{
+    border-radius: 0 20vmin 0 0;
+  }
+  50%{
+    border-radius: 0 20vmin 15vmin 0;
   }
 }
 
@@ -403,31 +447,97 @@ code {
 
 #bigMonsterHandOne{
   position: absolute;
-  left: 36vmax;
+  left: 38vmax;
   bottom: -20vmax;
-  width: 25vmin;
-  height: 30vmax;
+  width: 20vmin;
+  height: 15vmax;
   background-color: #b30086;
   border-radius: 10vmin;
+  animation: 10s goUpWormhole, 10s vanish, 5s 8s reappear;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+@keyframes goUpWormhole{
+  0%, 100%{
+    bottom: -20vmax;
+  }
+  80%{
+    bottom: 20vmin;
+  }
+}
+
+@keyframes vanish{
+  0%{
+    transform: rotateX(0deg);
+  }
+  100%{
+    transform: rotateX(92.5deg);
+  }
+}
+
+@keyframes reappear{
+  0%{
+    transform: rotateX(92.5deg);
+  }
+  20%{
+    transform: rotateX(0deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
 }
 
 #bigMonsterThumb{
   position: absolute;
   top: 15vmin;
-  left: -5vmin;
+  left: -3vmin;
   width: 10vmin;
   height: 15vmin;
-  background-color: #b30086;
+  background-color: #990073;
   border-radius: 10vmin;
   transform: rotate(-60deg);
 }
 
 #bigMonsterHandOneReflection{
   position: absolute;
-  left: 36.5vmax;
+  left: 38.5vmax;
   bottom: -19.8vmax;
-  width: 25vmin;
-  height: 30vmax;
+  width: 20vmin;
+  height: 15vmax;
   background-color: #f2f2f2;
   border-radius: 10vmin;
+  animation: 10s goUpWormhole1, 10s vanish1, 5s 8s reappear1;
+  animation-iteration-count: 1;
+  z-index: 1; 
+}
+
+@keyframes goUpWormhole1{
+  0%, 100%{
+    bottom: -20vmax;
+  }
+  80%{
+    bottom: 20vmin;
+  }
+}
+
+@keyframes vanish1{
+  0%{
+    transform: rotateX(0deg);
+  }
+  100%{
+    transform: rotateX(92.5deg);
+  }
+}
+
+@keyframes reappear1{
+  0%{
+    transform: rotateX(92.5deg);
+  }
+  20%{
+    transform: rotateX(0deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
 }
