@@ -46,3 +46,156 @@ code {
   align-content: center;
 }
 
+.interactiveContainer{
+  background-color: #f2f2f2;
+}
+
+#glowBall{
+  position: absolute;
+  right: 20vmax;
+  top: 35%;
+  width: 5vmin;
+  height: 5vmin;
+  background-color: #000000;
+  border-radius: 100%;
+}
+
+#bigMonsterContainer{
+  overflow: hidden;
+}
+
+#bigMonster{
+  position: absolute;
+  bottom: 0;
+  left: 5vmin;
+  width: 15vmax;
+  height: 35vmax;
+  background-color: aqua;
+  border-radius: 10vmin 10vmin 0 0;
+}
+
+#bigMonsterReflection{
+  position: absolute;
+  bottom: 0;
+  left: 6vmin;
+  width: 15vmax;
+  height: 35vmax;
+  background-color: #cccccc;
+  border-radius: 10vmin 10vmin 0 0;
+}
+
+#bigMonsterLeftEye{
+  position: absolute;
+  width: 7vmin;
+  height: 15vmin;
+  background-color: #ffffff;
+  border-radius: 5vmin;
+  margin: 10vmin 0 0 7vmin;
+}
+
+#bigMonsterRightEye{
+  position: absolute;
+  width: 7vmin;
+  height: 15vmin;
+  background-color: #ffffff;
+  border-radius: 5vmin;
+  margin: 10vmin 0 0 20vmin;
+}
+
+#leftPupil, #rightPupil{
+  position: absolute;
+  bottom: 1vmin;
+  left: 50%;
+  transform: translateX(-30%);
+  width: 5vmin;
+  height: 10vmin;
+  background-color: #000000;
+  border-radius: 5vmin;
+}
+
+#leftEyeSpark, #rightEyeSpark{
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0.4vmin;
+}
+
+#bigMonsterMouth{
+  position: absolute;
+  top: 30vmin;
+  left: 35%;
+  width: 12vmin;
+  height: 5vmin;
+  background-color: #ff1a75;
+  border-radius: 0 0 5vmin 5vmin;
+}
+
+#bigMonsterBody{
+  position: absolute;
+  width: 30vmax;
+  height: 12vmax;
+  background-color: aqua;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 20vmin 0 0;
+}
+
+#bigMonsterBodyReflection{
+  position: absolute;
+  width: 31vmax;
+  height: 12vmax;
+  background-color: #cccccc;
+  bottom: 0.3vmin;
+  left: -1vmin;
+  border-radius: 0 20vmin 0 0;
+}
+
+#bigMonsterHand{
+  position: absolute;
+  bottom: -15vmin;
+  left: 20vmax;
+}
+
+#bigMonsterUpperArm{
+  display: inline-block;
+  border-radius: 8vmin;
+  width: 25vmax;
+  height: 10vmax;
+  transform: rotate(45deg);
+  background-color: aqua;
+}
+
+#bigMonsterLowerArm{
+  position: absolute;
+  left: 12vmax;
+  bottom: 2vmin;
+  display: inline-block;
+  border-radius: 8vmin;
+  width: 25vmax;
+  height: 10vmax;
+  transform: rotate(-45deg);
+  background-color: aqua;
+}
+
+#wormHoleEntry{
+  position: absolute;
+  top: 25vmax;
+  left: 40vmax;
+  width: 7vmin;
+  height: 30vmin;
+  background-color: #000000;
+  border-radius: 100%;
+  transform: rotate(90deg);
+}
+
+#wormHoleExit{
+  position: absolute;
+  top: 5vmax;
+  right: 10vmax;
+  width: 7vmin;
+  height: 30vmin;
+  background-color: #000000;
+  border-radius: 100%;
+  transform: rotate(-35deg);
+}
