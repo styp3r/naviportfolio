@@ -24,6 +24,11 @@ function BigMonster(){
             <div id = "bigMonsterBody"></div>
             <div id = "bigMonsterNeck"></div>
             <div id = "bigMonsterChest"></div>
+        
+            <div id = "bigMonsterHandOneReflection"></div>
+            <div id = "bigMonsterHandOne">
+                <div id = "bigMonsterThumb"></div>
+            </div>
 
         </div>
     );
