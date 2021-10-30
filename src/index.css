@@ -19,7 +19,7 @@ code {
   font-family: 'Ubuntu', sans-serif;
   font-size: 3vmin;
   letter-spacing: 2px;
-  color: #808080;
+  color: #f2f2f2;
 }
 
 .heroText1, .heroText2{
@@ -34,7 +34,7 @@ code {
 }
 
 #title{
-  color: #A9A9A9;
+  color: #f2f2f2;
 }
 
 .heroContentContainer{
@@ -47,7 +47,8 @@ code {
 }
 
 .interactiveContainer{
-  background-color: #f2f2f2;
+  background-color: #b300b3;
+  box-shadow: inset 0 0 10vmin 1px #000000;
 }
 
 #glowBall{
@@ -56,8 +57,10 @@ code {
   top: 35%;
   width: 5vmin;
   height: 5vmin;
-  background-color: #000000;
+  background-color: #ffffff;
   border-radius: 100%;
+  border: solid #f2f2f2;
+  box-shadow: 0 0 100vmin 30vmin #ffffff;
 }
 
 #bigMonsterContainer{
@@ -70,8 +73,38 @@ code {
   left: 5vmin;
   width: 15vmax;
   height: 35vmax;
-  background-color: aqua;
+  background-color: #b30086;
   border-radius: 10vmin 10vmin 0 0;
+}
+
+#bigMonsterFace{
+  position: absolute;
+  width: 25vmin;
+  height: 40vmin;
+  left: 15%;
+  top: 5%;
+  border-radius: 10vmin;
+  background-color: #990073;
+}
+
+#bigMonsterNeck{
+  position: absolute;
+  width: 20vmin;
+  height: 10vmin;
+  left: 20%;
+  top: -5%;
+  border-radius: 10vmin;
+  background-color: #990073;
+}
+
+#bigMonsterChest{
+  position: absolute;
+  width: 20vmax;
+  height: 15vmin;
+  left: 5%;
+  bottom: 0;
+  border-radius: 10vmin 10vmin 0 0;
+  background-color: #990073;
 }
 
 #bigMonsterReflection{
@@ -135,7 +168,7 @@ code {
   position: absolute;
   width: 30vmax;
   height: 12vmax;
-  background-color: aqua;
+  background-color: #b30086;
   bottom: 0;
   left: 0;
   border-radius: 0 20vmin 0 0;
@@ -163,7 +196,7 @@ code {
   width: 25vmax;
   height: 10vmax;
   transform: rotate(45deg);
-  background-color: aqua;
+  background-color: #b30086;
 }
 
 #bigMonsterLowerArm{
@@ -175,7 +208,7 @@ code {
   width: 25vmax;
   height: 10vmax;
   transform: rotate(-45deg);
-  background-color: aqua;
+  background-color: #b30086;
 }
 
 #wormHoleEntry{
@@ -198,4 +231,112 @@ code {
   background-color: #000000;
   border-radius: 100%;
   transform: rotate(-35deg);
+}
+
+#globOne{
+  position: absolute;
+  width: 30vmax;
+  height: 30vmax;
+  right: 7vmax;
+  top: 10%;
+  opacity: 0.1;
+  transform: rotate(120deg);
+  animation: 3.5s pulseGlobOne;
+  animation-iteration-count: infinite;
+}
+
+#globTwo{
+  position: absolute;
+  width: 60vmax;
+  height: 60vmax;
+  right: 2vmax;
+  top: 1%;
+  opacity: 0.1;
+  transform: rotate(80deg);
+  animation: 4s pulseGlobTwo;
+  animation-iteration-count: infinite;
+}
+
+#globThree{
+  position: absolute;
+  width: 100vmax;
+  height: 100vmax;
+  right: -20vmax;
+  top: -10%;
+  opacity: 0.1;
+  transform: rotate(30deg);
+  animation: 4.5s pulseGlobThree;
+  animation-iteration-count: infinite;
+}
+
+#globFour{
+  position: absolute;
+  width: 150vmax;
+  height: 150vmax;
+  right: -20vmax;
+  top: -10%;
+  opacity: 0.1;
+  transform: rotate(50deg);
+  animation: 5s pulseGlobFour;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseGlobOne{
+  0%{
+    width: 30vmax;
+    height: 30vmax;
+  }
+  50%{
+    width: 31vmax;
+    height: 31vmax;
+  }
+  100%{
+    width: 30vmax;
+    height: 30vmax;
+  }
+}
+
+@keyframes pulseGlobTwo{
+  0%{
+    width: 60vmax;
+    height: 60vmax;
+  }
+  50%{
+    width: 62vmax;
+    height: 64vmax;
+  }
+  100%{
+    width: 60vmax;
+    height: 60vmax;
+  }
+}
+
+@keyframes pulseGlobThree{
+  0%{
+    width: 100vmax;
+    height: 100vmax;
+  }
+  50%{
+    width: 102vmax;
+    height: 104vmax;
+  }
+  100%{
+    width: 100vmax;
+    height: 100vmax;
+  }
+}
+
+@keyframes pulseGlobFour{
+  0%{
+    width: 150vmax;
+    height: 150vmax;
+  }
+  50%{
+    width: 155vmax;
+    height: 159vmax;
+  }
+  100%{
+    width: 150vmax;
+    height: 150vmax;
+  }
 }
