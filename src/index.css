@@ -221,7 +221,7 @@ code {
   height: 5vmin;
   background-color: #ff1a75;
   border-radius: 0 0 5vmin 5vmin;
-  animation: 3s 3s shockedStart, 0.6s 6s shockedEnd;
+  animation: 3s 3s shockedStart, 1s 6s shockedEnd;
   animation-iteration-count: 1;
 }
 
@@ -259,7 +259,7 @@ code {
   bottom: -5vmin;
   left: 0;
   border-radius: 0 20vmin 0 0;
-  animation: 3s infinite hoverBigMonsterBody, 10s 2s 1 moveShoulder;
+  animation: 3s infinite hoverBigMonsterBody, 10s 3s 1 moveShoulder;
 }
 
 @keyframes hoverBigMonsterBody{
@@ -291,7 +291,7 @@ code {
   bottom: -10vmin;
   left: -1vmin;
   border-radius: 0 20vmin 0 0;
-  animation: 3s infinite hoverBigMonsterBodyReflection, 10s 2s 1 moveShoulder1;
+  animation: 3s infinite hoverBigMonsterBodyReflection, 10s 3s 1 moveShoulder1;
 }
 
 @keyframes hoverBigMonsterBodyReflection{
@@ -313,28 +313,6 @@ code {
   50%{
     border-radius: 0 20vmin 15vmin 0;
   }
-}
-
-#wormHoleEntry{
-  position: absolute;
-  top: 25vmax;
-  left: 40vmax;
-  width: 7vmin;
-  height: 30vmin;
-  background-color: #000000;
-  border-radius: 100%;
-  transform: rotate(90deg);
-}
-
-#wormHoleExit{
-  position: absolute;
-  top: 5vmax;
-  right: 10vmax;
-  width: 7vmin;
-  height: 30vmin;
-  background-color: #000000;
-  border-radius: 100%;
-  transform: rotate(-35deg);
 }
 
 #globOne{
@@ -442,102 +420,5 @@ code {
   100%{
     width: 150vmax;
     height: 150vmax;
-  }
-}
-
-#bigMonsterHandOne{
-  position: absolute;
-  left: 38vmax;
-  bottom: -20vmax;
-  width: 20vmin;
-  height: 15vmax;
-  background-color: #b30086;
-  border-radius: 10vmin;
-  animation: 10s goUpWormhole, 10s vanish, 5s 8s reappear;
-  animation-iteration-count: 1;
-  z-index: 1;
-}
-
-@keyframes goUpWormhole{
-  0%, 100%{
-    bottom: -20vmax;
-  }
-  80%{
-    bottom: 20vmin;
-  }
-}
-
-@keyframes vanish{
-  0%{
-    transform: rotateX(0deg);
-  }
-  100%{
-    transform: rotateX(92.5deg);
-  }
-}
-
-@keyframes reappear{
-  0%{
-    transform: rotateX(92.5deg);
-  }
-  20%{
-    transform: rotateX(0deg);
-  }
-  100%{
-    transform: rotateX(0deg);
-  }
-}
-
-#bigMonsterThumb{
-  position: absolute;
-  top: 15vmin;
-  left: -3vmin;
-  width: 10vmin;
-  height: 15vmin;
-  background-color: #990073;
-  border-radius: 10vmin;
-  transform: rotate(-60deg);
-}
-
-#bigMonsterHandOneReflection{
-  position: absolute;
-  left: 38.5vmax;
-  bottom: -19.8vmax;
-  width: 20vmin;
-  height: 15vmax;
-  background-color: #f2f2f2;
-  border-radius: 10vmin;
-  animation: 10s goUpWormhole1, 10s vanish1, 5s 8s reappear1;
-  animation-iteration-count: 1;
-  z-index: 1; 
-}
-
-@keyframes goUpWormhole1{
-  0%, 100%{
-    bottom: -20vmax;
-  }
-  80%{
-    bottom: 20vmin;
-  }
-}
-
-@keyframes vanish1{
-  0%{
-    transform: rotateX(0deg);
-  }
-  100%{
-    transform: rotateX(92.5deg);
-  }
-}
-
-@keyframes reappear1{
-  0%{
-    transform: rotateX(92.5deg);
-  }
-  20%{
-    transform: rotateX(0deg);
-  }
-  100%{
-    transform: rotateX(0deg);
   }
 }
