@@ -47,8 +47,9 @@ code {
 }
 
 .interactiveContainer{
+  position: absolute;
+  top: 0;
   background-color: #b300b3;
-  box-shadow: inset 0 0 10vmin 1px #000000;
 }
 
 #glowBall{
@@ -61,10 +62,6 @@ code {
   border-radius: 100%;
   border: solid #f2f2f2;
   box-shadow: 0 0 100vmin 30vmin #ffffff;
-}
-
-#bigMonsterContainer{
-  overflow: hidden;
 }
 
 #bigMonster{
@@ -317,10 +314,10 @@ code {
 
 #globOne{
   position: absolute;
-  width: 30vmax;
-  height: 30vmax;
+  width: 30vmin;
+  height: 30vmin;
   right: 7vmax;
-  top: 10%;
+  top: 10vmin;
   opacity: 0.1;
   transform: rotate(120deg);
   animation: 3.5s pulseGlobOne;
@@ -329,10 +326,10 @@ code {
 
 #globTwo{
   position: absolute;
-  width: 60vmax;
-  height: 60vmax;
+  width: 60vmin;
+  height: 60vmin;
   right: 2vmax;
-  top: 1%;
+  top: 1vmin;
   opacity: 0.1;
   transform: rotate(80deg);
   animation: 4s pulseGlobTwo;
@@ -341,22 +338,22 @@ code {
 
 #globThree{
   position: absolute;
-  width: 100vmax;
-  height: 100vmax;
+  width: 90vmin;
+  height: 90vmin;
   right: -20vmax;
-  top: -10%;
+  top: -10vmin;
   opacity: 0.1;
   transform: rotate(30deg);
   animation: 4.5s pulseGlobThree;
   animation-iteration-count: infinite;
 }
 
-#globFour{
+#globFour{  /* BUG: Causing scrollbar to move*/
   position: absolute;
-  width: 150vmax;
-  height: 150vmax;
+  width: 100vmin;
+  height: 100vmin;
   right: -20vmax;
-  top: -10%;
+  top: -10vmin;
   opacity: 0.1;
   transform: rotate(50deg);
   animation: 5s pulseGlobFour;
@@ -364,62 +361,46 @@ code {
 }
 
 @keyframes pulseGlobOne{
-  0%{
-    width: 30vmax;
-    height: 30vmax;
+  0%, 100%{
+    width: 30vmin;
+    height: 30vmin;
   }
   50%{
-    width: 31vmax;
-    height: 31vmax;
-  }
-  100%{
-    width: 30vmax;
-    height: 30vmax;
+    width: 31vmin;
+    height: 31vmin;
   }
 }
 
 @keyframes pulseGlobTwo{
-  0%{
-    width: 60vmax;
-    height: 60vmax;
+  0%, 100%{
+    width: 60vmin;
+    height: 60vmin;
   }
   50%{
-    width: 62vmax;
-    height: 64vmax;
-  }
-  100%{
-    width: 60vmax;
-    height: 60vmax;
+    width: 62vmin;
+    height: 62vmin;
   }
 }
 
 @keyframes pulseGlobThree{
-  0%{
-    width: 100vmax;
-    height: 100vmax;
+  0%, 100%{
+    width: 90vmin;
+    height: 90vmin;
   }
   50%{
-    width: 102vmax;
-    height: 104vmax;
-  }
-  100%{
-    width: 100vmax;
-    height: 100vmax;
+    width: 92vmin;
+    height: 92vmin;
   }
 }
 
 @keyframes pulseGlobFour{
-  0%{
-    width: 150vmax;
-    height: 150vmax;
+  0%, 100%{
+    width: 100vmin;
+    height: 100vmin;
   }
   50%{
-    width: 155vmax;
-    height: 159vmax;
-  }
-  100%{
-    width: 150vmax;
-    height: 150vmax;
+    width: 101vmin;
+    height: 101vmin;
   }
 }
 
