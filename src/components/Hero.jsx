@@ -1,6 +1,7 @@
 import React,  {useEffect, useState} from 'react';
 import Plus from '../images/plusSign.png';
 import InteractiveBackground from './InteractiveBackground';
+import DarkModeSwitch from './DarkModeSwitch';
 
 function Hero(){
 
@@ -30,6 +31,7 @@ function Hero(){
     return (        
             <div style = {{width: window.innerWidth, height: window.innerHeight }} className = "heroContainer">
             <InteractiveBackground />
+            <DarkModeSwitch />  {/*Still have to create this switch along with new monster and full-page animation*/}
                 <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
