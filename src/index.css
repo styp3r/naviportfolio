@@ -585,3 +585,29 @@ code {
     top: 20vmin;
   }
 }
+
+/* Octopus eating glowball animtion class */
+
+.octopusTongue{ /*className 'octopusTongue' for slurp animation */
+  position: absolute;
+  width: 1vmin;
+  height: 2vmin;
+  right: 21vmin;
+  top: 22vmin;
+  transform: rotate(-30deg);
+  background-color: #00cca3;
+  border-radius: 5vmin;
+  z-index: 1;
+  animation: 1s infinite slurp;
+}
+
+@keyframes slurp{
+  0%, 100%{
+    width: 1vmin;
+
+  }
+  20%{
+    width: 23vmin;
+    margin: 7vmin 0 0 -20vmin;
+  }
+}
