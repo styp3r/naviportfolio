@@ -61,7 +61,22 @@ code {
   background-color: #ffffff;
   border-radius: 100%;
   border: solid #f2f2f2;
+  z-index: 2;
   box-shadow: 0 0 100vmin 30vmin #ffffff;
+}
+
+.glowBallDark{
+  animation: 0.2s 3s 1 goDark; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes goDark {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 #bigMonster{
@@ -416,6 +431,9 @@ code {
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+.hoverOctopusHead{
   animation: 3s infinite hoverOctopusHead;
 }
 
@@ -425,6 +443,29 @@ code {
   }
   50%{
     top: 3vmin;
+  }
+}
+
+.octopusHeadSlurp{ /*className 'octopusHeadSlurp' for slurp animation */
+  animation: 1.5s linear infinite headSlurp;
+}
+
+@keyframes headSlurp{
+  0%, 100%{
+    right: 5vmin;
+    top: 2vmin;
+  }
+  25%{
+    right: 20vmin;
+    top: 13vmin;
+  }
+  40%{
+    right: 25vmin;
+    top: 15vmin;
+  }
+  75%{
+    right: 15vmin;
+    top: 5vmin;
   }
 }
 
@@ -567,28 +608,3 @@ code {
   }
 }
 
-/* Octopus eating glowball animtion class */
-
-.octopusTongue{ /*className 'octopusTongue' for slurp animation */
-  position: absolute;
-  width: 1vmin;
-  height: 2vmin;
-  right: 21vmin;
-  top: 22vmin;
-  transform: rotate(-30deg);
-  background-color: #00cca3;
-  border-radius: 5vmin;
-  z-index: 1;
-  animation: 1s infinite slurp;
-}
-
-@keyframes slurp{
-  0%, 100%{
-    width: 1vmin;
-
-  }
-  20%{
-    width: 23vmin;
-    margin: 7vmin 0 0 -20vmin;
-  }
-}
