@@ -13,6 +13,8 @@ function Octopus(){
             <div id = "octopusLeg1"></div>
             <div id = "octopusLeg2"></div>
             <div id = "octopusLeg3"></div>
+
+            <div id = "octopusTongue"></div>  {/*Add className 'octopusTongue' for slurp animation */}
         </div>
     );
 }
