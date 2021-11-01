@@ -1,7 +1,7 @@
 function Octopus(){
     return (
         <div className = "octopusContainer">
-            <div id = "octopusHead">
+            <div id = "octopusHead" /*className = "octopusHeadSlurp"*/>
                 <div id = "octopusEye">
                     <div id = "octopusPupil"></div>
                 </div>
@@ -12,9 +12,7 @@ function Octopus(){
             <div id = "octopusBody"></div>
             <div id = "octopusLeg1"></div>
             <div id = "octopusLeg2"></div>
-            <div id = "octopusLeg3"></div>
-
-            <div id = "octopusTongue"></div>  {/*Add className 'octopusTongue' for slurp animation */}
+            <div id = "octopusLeg3"></div> 
         </div>
     );
 }
