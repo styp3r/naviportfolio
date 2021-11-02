@@ -1,7 +1,7 @@
 function Octopus(){
     return (
         <div className = "octopusContainer">
-            <div id = "octopusHead" /*className = "octopusHeadSlurp"*/>
+            <div id = "octopusHead" className = "hoverOctopusHead" /*"octopusHeadSlurp"*/>
                 <div id = "octopusEye">
                     <div id = "octopusPupil"></div>
                 </div>
