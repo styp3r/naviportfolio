@@ -2,11 +2,11 @@ function GlowBall(){
 
     function toggleDark(){
         document.getElementById("glowBall").className = "glowBallDark";
-        document.getElementById("octopusTongue").className = "octopusTongue";
+        document.getElementById("octopusHead").className = "octopusHeadSlurp";
 
         setTimeout(() => {
             document.getElementById("glowBall").className = "";
-            document.getElementById("octopusTongue").className = "";
+            document.getElementById("octopusHead").className = "hoverOctopusHead";
         }, 6000);
     }
 
