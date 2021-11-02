@@ -10,7 +10,7 @@ function InteractiveBackground(){
     let sectionHeight = window.innerHeight;
 
     return (
-        <div className = "interactiveContainer" style = {{width: sectionWidth, height: sectionHeight }}>
+        <div id = "interactiveContainer" style = {{width: sectionWidth, height: sectionHeight }}>
             <BackgroundSquares />
             <GlowBall />
             <BigMonster />
