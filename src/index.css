@@ -66,7 +66,7 @@ code {
 }
 
 .glowBallDark{
-  animation: 0.2s 3s 1 goDark; 
+  animation: 0.2s 2.5s 1 goDark; 
   animation-fill-mode: forwards;
 }
 
@@ -434,7 +434,7 @@ code {
 }
 
 .hoverOctopusHead{
-  animation: 3s infinite hoverOctopusHead;
+  animation: 1s infinite hoverOctopusHead;
 }
 
 @keyframes hoverOctopusHead{
@@ -447,7 +447,7 @@ code {
 }
 
 .octopusHeadSlurp{ /*className 'octopusHeadSlurp' for slurp animation */
-  animation: 1.5s linear infinite headSlurp;
+  animation: 1.2s 2s linear 1 headSlurp;
 }
 
 @keyframes headSlurp{
@@ -463,9 +463,13 @@ code {
     right: 25vmin;
     top: 15vmin;
   }
-  75%{
+  65%{
     right: 15vmin;
     top: 5vmin;
+  }
+  85%{
+    right: 8vmin;
+    top: 3vmin;
   }
 }
 
@@ -515,30 +519,16 @@ code {
   background-color: #ff1a75;
   border-radius: 0 0 5vmin 5vmin;
   z-index: 1;
-  animation: 5s infinite hoverOctopusMouth;
+  animation: 1s infinite hoverOctopusMouth;
 }
 
 @keyframes hoverOctopusMouth{
   0%, 100%{
-    margin: 0;
-    height: 3vmin;
-    width: 5vmin;
-  }
-  25%{
-      width: 6vmin;
-      height: 4vmin;
-      margin: 1vmin 1vmin 0 0;
+    top: 21vmin;
   }
   50%{
-    width: 6vmin;
-      height: 4vmin;
-    margin: 1vmin 0 0 0;
+    top: 22vmin;
   }
-  80%{
-    width: 6vmin;
-      height: 4vmin;
-    margin: 1vmin 0 0 1vmin;
-}
 }
 
 #octopusBody{
@@ -603,7 +593,7 @@ code {
     top: 19vmin;
   }
   50%{
-    height: 15.5vmin;
+    height: 17vmin;
     top: 20vmin;
   }
 }
