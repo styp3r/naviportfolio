@@ -46,7 +46,7 @@ code {
   align-content: center;
 }
 
-.interactiveContainer{
+#interactiveContainer{
   position: absolute;
   top: 0;
   background-color: #bb99ff;
@@ -66,7 +66,7 @@ code {
 }
 
 .glowBallDark{
-  animation: 0.2s 2.5s 1 goDark; 
+  animation: 0.2s 2.5s 1 goDark, 3s 1 glowBallReact; 
   animation-fill-mode: forwards;
 }
 
@@ -77,6 +77,28 @@ code {
   100%{
     opacity: 0;
   }
+}
+
+@keyframes glowBallReact{
+  0%, 100%{
+    width: 5vmin;
+    height: 5vmin;
+    right: 20vmax;
+    top: 35%;
+  }
+  50%{
+    width: 6vmin;
+    height: 6vmin;
+    right: 22vmax;
+    top: 32%;
+  }
+  75%{
+    right: 19vmax;
+    top: 35%;
+    width: 6vmin;
+    height: 6vmin;
+  }
+  
 }
 
 #bigMonster{
