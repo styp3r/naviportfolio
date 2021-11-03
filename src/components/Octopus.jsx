@@ -7,12 +7,13 @@ function Octopus(){
                 </div>
             </div>
 
-            <div id = "octopusMouth"></div>
+            <div id = "octopusMouth" className = "hoverOctopusMouth" /*"octopusMouthSlurp"*/></div>
 
-            <div id = "octopusBody"></div>
-            <div id = "octopusLeg1"></div>
-            <div id = "octopusLeg2"></div>
-            <div id = "octopusLeg3"></div> 
+            <div id = "octopusBody" className = "hoverOctopusBody" /*"octopusBodySlurp"*/></div>
+
+            <div id = "octopusLeg1" className = "hoverOctopusLeg1" /*"octopusLeg1Slurp"*/></div>
+            <div id = "octopusLeg2" className = "hoverOctopusLeg2"/*"octopusLeg2Slurp"*/></div>
+            <div id = "octopusLeg3" className = "hoverOctopusLeg3"/*"octopusLeg3Slurp"*/></div> 
         </div>
     );
 }
