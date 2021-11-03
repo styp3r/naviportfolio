@@ -21,6 +21,10 @@ function GlowBall(){
         
         
         setTimeout(()=>{
+            interactiveContainer.style.backgroundColor = "#151e1e";
+            interactiveContainer.style.transitionDuration = "0.7s";
+            document.getElementById("heroText1").style.color = "#b3fff0";
+
             octopusEye.style.backgroundColor = "#ff9933";
             octopusEye.style.transitionDuration = "1s";
             octopusEye.style.transitionDelay = "0.5s";
@@ -30,10 +34,6 @@ function GlowBall(){
         }, 1500);
 
         setTimeout(()=>{
-            interactiveContainer.style.backgroundColor = "#151e1e";
-            interactiveContainer.style.transitionDuration = "0.7s";
-            document.getElementById("heroText1").style.color = "#bb99ff";
-
             octopusMouth.style.width = "1vmin";
             octopusMouth.style.height = "1vmin";
             octopusMouth.style.borderRadius = "100%";
@@ -69,7 +69,7 @@ function GlowBall(){
             interactiveContainer.style.backgroundColor = "#bb99ff";
             interactiveContainer.style.transitionDelay = "0s";
             interactiveContainer.style.transitionDuration = "0.5s";
-        }, 8000);
+        }, 7000);
     }
 
     return (
