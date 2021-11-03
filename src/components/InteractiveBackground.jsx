@@ -3,6 +3,7 @@ import GlowBall from './GlowBall';
 import BigMonster from './BigMonster';
 import Octopus from './Octopus';
 import BackgroundSquares from './BackgroundSquares';
+import GlowMonster from './GlowMonster';
 
 function InteractiveBackground(){
 
@@ -15,6 +16,7 @@ function InteractiveBackground(){
             <GlowBall />
             <BigMonster />
             <Octopus />
+            <GlowMonster />
         </div>
     );
 }
