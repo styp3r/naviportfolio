@@ -74,6 +74,9 @@ code {
   0%{
     opacity: 1;
   }
+  50%{
+    opacity: 0;
+  }
   100%{
     opacity: 0;
   }
@@ -94,7 +97,7 @@ code {
   }
   75%{
     right: 19vmax;
-    top: 35%;
+    top: 32%;
     width: 6vmin;
     height: 6vmin;
   }
@@ -474,6 +477,7 @@ code {
 
 @keyframes headSlurp{
   0%, 100%{
+    
     right: 5vmin;
     top: 2vmin;
   }
@@ -561,25 +565,44 @@ code {
 }
 
 @keyframes mouthSlurp{
-  0%, 100%{
+  0%{
     right: 10vmin;
     top: 21vmin;
+    border-radius: 0 0 5vmin 5vmin;
+    width: 5vmin;
+    height: 3vmin;
   }
   25%{
-    right: 25vmin;
+    right: 30vmin;
     top: 32vmin;
+    border-radius: 100%;
+    width: 7vmin;
+    height: 7vmin;
   }
   40%{
-    right: 30vmin;
+    right: 40vmin;
     top: 34vmin;
+    border-radius: 100%;
+    width: 3vmin;
+    height: 3vmin;
   }
   65%{
-    right: 20vmin;
+    right: 30vmin;
     top: 24vmin;
+    border-radius: 100%;
+    width: 2vmin;
+    height: 2vmin;
+  }
+  75%{
+    width: 0.1vmin;
+    height: 0.1vmin;
   }
   85%{
     right: 13vmin;
     top: 22vmin;
+    border-radius: 100%;
+    width: 1vmin;
+    height: 1vmin;
   }
 }
 
