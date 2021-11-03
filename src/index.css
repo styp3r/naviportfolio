@@ -49,6 +49,7 @@ code {
 #interactiveContainer{
   position: absolute;
   top: 0;
+  overflow: hidden;
   background-color: #bb99ff;
 }
 
@@ -66,42 +67,20 @@ code {
 }
 
 .glowBallDark{
-  animation: 0.2s 2.5s 1 goDark, 3s 1 glowBallReact; 
+  animation: 0.2s 2.5s 1 goDark; 
   animation-fill-mode: forwards;
 }
 
 @keyframes goDark {
   0%{
-    opacity: 1;
+    display: block;
   }
   50%{
-    opacity: 0;
+    display: none;
   }
   100%{
-    opacity: 0;
+    display: none;
   }
-}
-
-@keyframes glowBallReact{
-  0%, 100%{
-    width: 5vmin;
-    height: 5vmin;
-    right: 20vmax;
-    top: 35%;
-  }
-  50%{
-    width: 6vmin;
-    height: 6vmin;
-    right: 22vmax;
-    top: 32%;
-  }
-  75%{
-    right: 19vmax;
-    top: 32%;
-    width: 6vmin;
-    height: 6vmin;
-  }
-  
 }
 
 #bigMonster{
@@ -356,7 +335,7 @@ code {
   position: absolute;
   width: 30vmin;
   height: 30vmin;
-  right: 7vmax;
+  right: 17vmax;
   top: 10vmin;
   opacity: 0.1;
   transform: rotate(120deg);
@@ -368,7 +347,7 @@ code {
   position: absolute;
   width: 60vmin;
   height: 60vmin;
-  right: 2vmax;
+  right: 20vmax;
   top: 1vmin;
   opacity: 0.1;
   transform: rotate(80deg);
@@ -380,7 +359,7 @@ code {
   position: absolute;
   width: 90vmin;
   height: 90vmin;
-  right: -20vmax;
+  right: 40vmax;
   top: -10vmin;
   opacity: 0.1;
   transform: rotate(30deg);
@@ -392,7 +371,7 @@ code {
   position: absolute;
   width: 100vmin;
   height: 100vmin;
-  right: -20vmax;
+  right: 50vmax;
   top: -10vmin;
   opacity: 0.1;
   transform: rotate(50deg);
@@ -428,8 +407,8 @@ code {
     height: 90vmin;
   }
   50%{
-    width: 92vmin;
-    height: 92vmin;
+    width: 91vmin;
+    height: 91vmin;
   }
 }
 
@@ -472,12 +451,11 @@ code {
 }
 
 .octopusHeadSlurp{ /*className 'octopusHeadSlurp' for slurp animation */
-  animation: 1.2s 2s linear 1 headSlurp;
+  animation: 1.2s 1s linear 1 headSlurp;
 }
 
 @keyframes headSlurp{
   0%, 100%{
-    
     right: 5vmin;
     top: 2vmin;
   }
@@ -561,7 +539,7 @@ code {
 }
 
 .octopusMouthSlurp{
-  animation: 1.2s 2s linear 1 mouthSlurp;
+  animation: 1.2s 1s linear 1 mouthSlurp;
 }
 
 @keyframes mouthSlurp{
@@ -583,8 +561,8 @@ code {
     right: 40vmin;
     top: 34vmin;
     border-radius: 100%;
-    width: 3vmin;
-    height: 3vmin;
+    width: 8vmin;
+    height: 8vmin;
   }
   65%{
     right: 30vmin;
@@ -630,7 +608,7 @@ code {
 }
 
 .octopusBodySlurp{ /*className 'octopusBodySlurp' for slurp animation */
-  animation: 1.2s 2s linear 1 bodySlurp;
+  animation: 1.2s 1s linear 1 bodySlurp;
 }
 
 @keyframes bodySlurp{
@@ -683,7 +661,7 @@ code {
 }
 
 .octopusLeg1Slurp{ /*className 'octopusBodySlurp' for slurp animation */
-  animation: 1.2s 2s linear 1 leg1Slurp;
+  animation: 1.2s 1s linear 1 leg1Slurp;
 }
 
 @keyframes leg1Slurp{
@@ -736,7 +714,7 @@ code {
 }
 
 .octopusLeg2Slurp{ /*className 'octopusBodySlurp' for slurp animation */
-  animation: 1.2s 2s linear 1 leg2Slurp;
+  animation: 1.2s 1s linear 1 leg2Slurp;
 }
 
 @keyframes leg2Slurp{
@@ -789,7 +767,7 @@ code {
 }
 
 .octopusLeg3Slurp{ /*className 'octopusBodySlurp' for slurp animation */
-  animation: 1.2s 2s linear 1 leg3Slurp;
+  animation: 1.2s 1s linear 1 leg3Slurp;
 }
 
 @keyframes leg3Slurp{
