@@ -63,7 +63,17 @@ code {
   border-radius: 100%;
   border: solid #f2f2f2;
   z-index: 2;
-  box-shadow: 0 0 100vmin 30vmin #ffffff;
+  box-shadow: 0 0 80vmin 20vmin #ffffff;
+  animation: 2.5s infinite glowBallPulse; 
+}
+
+@keyframes glowBallPulse{
+  0%, 100%{
+    box-shadow: 0 0 80vmin 20vmin #ffffff;
+  }
+  50%{
+    box-shadow: 0 0 90vmin 30vmin #ffffff;
+  }
 }
 
 .glowBallDark{
@@ -333,10 +343,10 @@ code {
 
 #globOne{
   position: absolute;
-  width: 30vmin;
-  height: 30vmin;
-  right: 17vmax;
-  top: 10vmin;
+  width: 30vmax;
+  height: 30vmax;
+  right: 6vmax;
+  top: 8vmin;
   opacity: 0.1;
   transform: rotate(120deg);
   animation: 3.5s pulseGlobOne;
@@ -345,81 +355,81 @@ code {
 
 #globTwo{
   position: absolute;
-  width: 60vmin;
-  height: 60vmin;
-  right: 20vmax;
+  width: 60vmax;
+  height: 60vmax;
+  right: -1vmax;
   top: 1vmin;
   opacity: 0.1;
-  transform: rotate(80deg);
+  transform: rotate(50deg);
   animation: 4s pulseGlobTwo;
   animation-iteration-count: infinite;
 }
 
 #globThree{
   position: absolute;
-  width: 90vmin;
-  height: 90vmin;
-  right: 40vmax;
+  width: 90vmax;
+  height: 90vmax;
+  right: -10vmax;
   top: -10vmin;
   opacity: 0.1;
-  transform: rotate(30deg);
+  transform: rotate(150deg);
   animation: 4.5s pulseGlobThree;
   animation-iteration-count: infinite;
 }
 
 #globFour{  /* BUG: Causing scrollbar to move*/
   position: absolute;
-  width: 100vmin;
-  height: 100vmin;
-  right: 50vmax;
+  width: 110vmax;
+  height: 110vmax;
+  right: 5vmax;
   top: -10vmin;
   opacity: 0.1;
-  transform: rotate(50deg);
+  transform: rotate(10deg);
   animation: 5s pulseGlobFour;
   animation-iteration-count: infinite;
 }
 
 @keyframes pulseGlobOne{
   0%, 100%{
-    width: 30vmin;
-    height: 30vmin;
+    width: 30vmax;
+  height: 30vmax;
   }
   50%{
-    width: 31vmin;
-    height: 31vmin;
+    width: 31vmax;
+    height: 31vmax;
   }
 }
 
 @keyframes pulseGlobTwo{
   0%, 100%{
-    width: 60vmin;
-    height: 60vmin;
+    width: 60vmax;
+    height: 60vmax;
   }
   50%{
-    width: 62vmin;
-    height: 62vmin;
+    width: 63vmax;
+    height: 63vmax;
   }
 }
 
 @keyframes pulseGlobThree{
   0%, 100%{
-    width: 90vmin;
-    height: 90vmin;
+    width: 90vmax;
+    height: 90vmax;
   }
   50%{
-    width: 91vmin;
-    height: 91vmin;
+    width: 95vmax;
+    height: 95vmax;
   }
 }
 
 @keyframes pulseGlobFour{
   0%, 100%{
-    width: 100vmin;
-    height: 100vmin;
+    width: 110vmax;
+    height: 110vmax;
   }
   50%{
-    width: 101vmin;
-    height: 101vmin;
+    width: 120vmax;
+    height: 120vmax;
   }
 }
 
@@ -638,7 +648,7 @@ code {
   position: absolute;
   right: 5vmin;
   top: 19vmin;
-  width: 7vmin;
+  width: 8vmin;
   height: 15vmin;
   background-color: aqua;
   border-radius: 5vmin;
@@ -691,7 +701,7 @@ code {
   position: absolute;
   right: 12vmin;
   top: 19vmin;
-  width: 7vmin;
+  width: 8vmin;
   height: 15vmin;
   background-color: aqua;
   border-radius: 5vmin;
