@@ -20,7 +20,7 @@ function Hero(){
         clearInterval(interval);
         document.getElementById("plus").style.transitionDuration = "0.3s";
         document.getElementById("plus").style.transform = `rotate(${count}deg)`;
-    }, 4000);
+    }, 3000);
 
     useEffect(()=>{
         setCount(count + 45);  //ENABLE THIS FOR THE ROTATION ANIMATION TO WORK 
