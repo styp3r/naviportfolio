@@ -3,7 +3,9 @@ function Octopus(){
         <div className = "octopusContainer">
             <div id = "octopusHead" className = "hoverOctopusHead" /*"octopusHeadSlurp"*/>
                 <div id = "octopusEye">
-                    <div id = "octopusPupil"></div>
+                    <div id = "octopusPupil">
+                        <div id ="octopusPupilReflection"></div>
+                    </div>
                 </div>
             </div>
 
