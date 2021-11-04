@@ -24,6 +24,7 @@ function GlowBall(){
             interactiveContainer.style.backgroundColor = "#151e1e";
             interactiveContainer.style.transitionDuration = "0.7s";
             document.getElementById("heroText1").style.color = "#b3fff0";
+            document.getElementById("glowMonsterUpperBody").className = "addGlow";
 
             octopusEye.style.backgroundColor = "#ff9933";
             octopusEye.style.transitionDuration = "2.5s";
@@ -69,6 +70,7 @@ function GlowBall(){
             interactiveContainer.style.backgroundColor = "#aa80ff";
             interactiveContainer.style.transitionDelay = "0s";
             interactiveContainer.style.transitionDuration = "0.5s";
+            document.getElementById("glowMonsterUpperBody").className = "";
         }, 7000);
     }
 
