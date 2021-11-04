@@ -21,11 +21,13 @@ function GlowBall(){
         
         
         setTimeout(()=>{
-            interactiveContainer.style.backgroundColor = "#151e1e";
+            interactiveContainer.style.background = "linear-gradient(#000000, #0d1a26)"; 
             interactiveContainer.style.transitionDuration = "0.7s";
-            document.getElementById("heroText1").style.color = "#b3fff0";
+            document.getElementById("heroText1").style.color = "#ccff99";
             document.getElementById("glowMonsterUpperBody").className = "addGlow";
+            document.getElementById("glowMonsterUpperBody").style.transitionDuration = "0.5s";
 
+            octopusEye.className = "addOrangeGlow";
             octopusEye.style.backgroundColor = "#ff9933";
             octopusEye.style.transitionDuration = "2.5s";
             octopusEye.style.transitionDelay = "0.5s";
@@ -44,6 +46,7 @@ function GlowBall(){
         
 
         setTimeout(() => {
+            octopusEye.className = "";
             document.getElementById("octopusHead").className = "hoverOctopusHead";
             document.getElementById("octopusBody").className = "hoverOctopusBody";  
             octopusMouth.style.transitionDuration = "1s";
@@ -67,7 +70,7 @@ function GlowBall(){
             glowBall.className = "";
             glowBall.style.transitionDuration = "0s";
             glowBall.style.display = "block";
-            interactiveContainer.style.backgroundColor = "#aa80ff";
+            interactiveContainer.style.background = "linear-gradient(#aa80ff, #d147a3)";
             interactiveContainer.style.transitionDelay = "0s";
             interactiveContainer.style.transitionDuration = "0.5s";
             document.getElementById("glowMonsterUpperBody").className = "";
