@@ -50,7 +50,7 @@ code {
   position: absolute;
   top: 0;
   overflow: hidden;
-  background-color: #bb99ff;
+  background-color: #aa80ff;
 }
 
 #glowBall{
@@ -285,7 +285,7 @@ code {
   bottom: -5vmin;
   left: 0;
   border-radius: 0 20vmin 0 0;
-  animation: 3s infinite hoverBigMonsterBody, 10s 3s 1 moveShoulder;
+  animation: 3s infinite hoverBigMonsterBody;
 }
 
 @keyframes hoverBigMonsterBody{
@@ -300,15 +300,6 @@ code {
   }
 }
 
-@keyframes moveShoulder{
-  0%, 100%{
-    border-radius: 0 20vmin 0 0;
-  }
-  50%{
-    border-radius: 0 20vmin 15vmin 0;
-  }
-}
-
 #bigMonsterBodyReflection{
   position: absolute;
   width: 31vmax;
@@ -317,7 +308,7 @@ code {
   bottom: -10vmin;
   left: -1vmin;
   border-radius: 0 20vmin 0 0;
-  animation: 3s infinite hoverBigMonsterBodyReflection, 10s 3s 1 moveShoulder1;
+  animation: 3s infinite hoverBigMonsterBodyReflection;
 }
 
 @keyframes hoverBigMonsterBodyReflection{
@@ -329,15 +320,6 @@ code {
   }
   100%{
     bottom: -5vmin;
-  }
-}
-
-@keyframes moveShoulder1{
-  0%, 100%{
-    border-radius: 0 20vmin 0 0;
-  }
-  50%{
-    border-radius: 0 20vmin 15vmin 0;
   }
 }
 
@@ -505,6 +487,14 @@ code {
   background-color: #00cca3;
   border-radius: 100%;
   animation: 3s infinite octopusPupilDilation;
+}
+
+#octopusPupilReflection{
+  margin-left: 60%;
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 100%;
+  background-color: #ccfff5;
 }
 
 @keyframes octopusPupilDilation{
