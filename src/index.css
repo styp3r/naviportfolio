@@ -65,14 +65,19 @@ code {
   z-index: 2;
   box-shadow: 0 0 80vmin 20vmin #ffffff;
   animation: 2.5s infinite glowBallPulse; 
+  cursor: pointer;
 }
 
 @keyframes glowBallPulse{
   0%, 100%{
     box-shadow: 0 0 80vmin 20vmin #ffffff;
+    background-color: #ffffff;
   }
   50%{
     box-shadow: 0 0 90vmin 30vmin #ffffff;
+    background-color: #f4feff;
+    width: 5vmin;
+    height: 6vmin;
   }
 }
 
@@ -791,5 +796,35 @@ code {
     right: 22vmin;
     top: 20vmin;
   }
+}
+
+.glowMonsterContainer{
+  position: absolute;
+  right: 40vmax;
+  bottom: 40vmin;
+}
+
+
+#glowMonsterUpperBody{
+  position: absolute;
+  width: 15vmin;
+  height: 45vmin;
+  background-color: #7fff00;
+  border-radius: 10vmin;
+}
+
+#glowMonsterLowerBody{
+  position: absolute;
+  left: 10vmin;
+  top: 20vmin;
+  width: 15vmin;
+  height: 35vmin;
+  background-color: #7fff00;
+  border-radius: 10vmin;
+  transform: rotate(90deg);
+}
+
+.addGlow{
+  box-shadow: 0 0 100vmin 20vmin #ccff99;
 }
 
