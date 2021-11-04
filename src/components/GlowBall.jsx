@@ -26,11 +26,11 @@ function GlowBall(){
             document.getElementById("heroText1").style.color = "#b3fff0";
 
             octopusEye.style.backgroundColor = "#ff9933";
-            octopusEye.style.transitionDuration = "1s";
+            octopusEye.style.transitionDuration = "2.5s";
             octopusEye.style.transitionDelay = "0.5s";
             octopusPupil.style.backgroundColor = "red";
             octopusPupil.style.transitionDelay = "0.5s";
-            octopusPupil.style.transitionDuration = "1s";
+            octopusPupil.style.transitionDuration = "2.5s";
         }, 1500);
 
         setTimeout(()=>{
@@ -66,7 +66,7 @@ function GlowBall(){
             glowBall.className = "";
             glowBall.style.transitionDuration = "0s";
             glowBall.style.display = "block";
-            interactiveContainer.style.backgroundColor = "#bb99ff";
+            interactiveContainer.style.backgroundColor = "#aa80ff";
             interactiveContainer.style.transitionDelay = "0s";
             interactiveContainer.style.transitionDuration = "0.5s";
         }, 7000);
