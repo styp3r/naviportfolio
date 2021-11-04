@@ -50,7 +50,7 @@ code {
   position: absolute;
   top: 0;
   overflow: hidden;
-  background-color: #aa80ff;
+  background: linear-gradient(#aa80ff, #d147a3);
 }
 
 #glowBall{
@@ -62,6 +62,7 @@ code {
   background-color: #ffffff;
   border-radius: 100%;
   border: solid #f2f2f2;
+  border-width: 0.7vmin;
   z-index: 2;
   box-shadow: 0 0 80vmin 20vmin #ffffff;
   animation: 2.5s infinite glowBallPulse; 
@@ -334,7 +335,7 @@ code {
   height: 30vmax;
   right: 6vmax;
   top: 8vmin;
-  opacity: 0.1;
+  opacity: 0.07;
   transform: rotate(120deg);
   animation: 3.5s pulseGlobOne;
   animation-iteration-count: infinite;
@@ -346,7 +347,7 @@ code {
   height: 60vmax;
   right: -1vmax;
   top: 1vmin;
-  opacity: 0.1;
+  opacity: 0.06;
   transform: rotate(50deg);
   animation: 4s pulseGlobTwo;
   animation-iteration-count: infinite;
@@ -358,7 +359,7 @@ code {
   height: 90vmax;
   right: -10vmax;
   top: -10vmin;
-  opacity: 0.1;
+  opacity: 0.04;
   transform: rotate(150deg);
   animation: 4.5s pulseGlobThree;
   animation-iteration-count: infinite;
@@ -370,7 +371,7 @@ code {
   height: 110vmax;
   right: 5vmax;
   top: -10vmin;
-  opacity: 0.1;
+  opacity: 0.03;
   transform: rotate(10deg);
   animation: 5s pulseGlobFour;
   animation-iteration-count: infinite;
@@ -826,5 +827,9 @@ code {
 
 .addGlow{
   box-shadow: 0 0 100vmin 20vmin #ccff99;
+}
+
+.addOrangeGlow{
+  box-shadow: 0 0 50vmin 10vmin #ff9933;
 }
 
