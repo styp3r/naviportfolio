@@ -22,13 +22,17 @@ function GlowBall(){
         
         setTimeout(()=>{
             document.getElementById("bigMonsterMouth").className = "bigMonsterShocked";
-            document.getElementById("bigMonster").style.backgroundColor = "#330026";
-            document.getElementById("bigMonsterBody").style.backgroundColor = "#330026";
-            document.getElementById("bigMonsterFace").style.backgroundColor = "#3c002d";
-            document.getElementById("bigMonsterNeck").style.backgroundColor = "#3c002d";
-            document.getElementById("bigMonsterChest").style.backgroundColor = "#3c002d";
-            document.getElementById("bigMonsterBodyReflection").style.backgroundColor = "#ccff99";
-            document.getElementById("bigMonsterReflection").style.backgroundColor = "#ccff99";
+            document.getElementById("bigMonster").style.backgroundColor = "#1b1e26";
+            document.getElementById("bigMonsterBody").style.backgroundColor = "#1b1e26";
+            document.getElementById("bigMonsterFace").style.backgroundColor = "#1c262a";
+            document.getElementById("rightPupil").style.backgroundColor = "#00cca3";
+            document.getElementById("leftPupil").style.backgroundColor = "#00cca3";
+            document.getElementById("bigMonsterMouth").style.border = "solid #1e7b4e";
+            document.getElementById("bigMonsterMouth").style.borderWidth = "1vmin";
+            document.getElementById("bigMonsterNeck").style.backgroundColor = "#1c262a";
+            document.getElementById("bigMonsterChest").style.backgroundColor = "#1c262a";
+            document.getElementById("bigMonsterBodyReflection").style.backgroundColor = "#1e7b4e";
+            document.getElementById("bigMonsterReflection").style.backgroundColor = "#1e7b4e";
 
             interactiveContainer.style.background = "linear-gradient(#000000, #0d1a26)"; 
             interactiveContainer.style.transitionDuration = "0.7s";
@@ -36,11 +40,11 @@ function GlowBall(){
             document.getElementById("glowMonsterUpperBody").className = "addGlow";
             document.getElementById("glowMonsterUpperBody").style.transitionDuration = "0.5s";
 
-            document.getElementById("octopusHead").style.backgroundColor = "#008080";
-            document.getElementById("octopusBody").style.backgroundColor = "#008080";
-            document.getElementById("octopusLeg1").style.backgroundColor = "#008080";
-            document.getElementById("octopusLeg2").style.backgroundColor = "#008080";
-            document.getElementById("octopusLeg3").style.backgroundColor = "#008080"; 
+            document.getElementById("octopusHead").style.backgroundColor = "#1c262a";
+            document.getElementById("octopusBody").style.backgroundColor = "#1c262a";
+            document.getElementById("octopusLeg1").style.backgroundColor = "#1c262a";
+            document.getElementById("octopusLeg2").style.backgroundColor = "#1c262a";
+            document.getElementById("octopusLeg3").style.backgroundColor = "#1c262a"; 
 
             octopusEye.className = "addOrangeGlow";
             octopusEye.style.backgroundColor = "#ff9933";
@@ -106,16 +110,20 @@ function GlowBall(){
             document.getElementById("bigMonsterMouth").className = "";
             document.getElementById("bigMonsterBody").style.backgroundColor = "#b30086";
             document.getElementById("bigMonsterFace").style.backgroundColor = "#990073";
+            document.getElementById("rightPupil").style.backgroundColor = "#9900cc";
+            document.getElementById("leftPupil").style.backgroundColor = "#9900cc";
+            document.getElementById("bigMonsterMouth").style.border = "solid #800060";
+            document.getElementById("bigMonsterMouth").style.borderWidth = "1vmin";
             document.getElementById("bigMonsterNeck").style.backgroundColor = "#990073";
             document.getElementById("bigMonsterChest").style.backgroundColor = "#990073";
-            document.getElementById("bigMonsterBodyReflection").style.backgroundColor = "#cccccc";
-            document.getElementById("bigMonsterReflection").style.backgroundColor = "#cccccc";
+            document.getElementById("bigMonsterBodyReflection").style.backgroundColor = "#ffffff";
+            document.getElementById("bigMonsterReflection").style.backgroundColor = "#ffffff";
         }, 7000);
     }
 
     return (
         <div>
-            <div onMouseOver = {toggleDark} id = "glowBall"></div>
+            <div onClick = {toggleDark} onMouseOver = {toggleDark} id = "glowBall"></div>
         </div>
     );
 }
