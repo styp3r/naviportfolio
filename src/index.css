@@ -190,7 +190,7 @@ code {
   left: 6vmin;
   width: 15vmax;
   height: 35vmax;
-  background-color: #cccccc;
+  background-color: #ffffff;
   border-radius: 10vmin 10vmin 0 0;
   animation: 3s hoverBigMonsterReflection;
   animation-iteration-count: infinite;
@@ -313,7 +313,7 @@ code {
   position: absolute;
   width: 31vmax;
   height: 12.5vmax;
-  background-color: #cccccc;
+  background-color: #ffffff;
   bottom: -10vmin;
   left: -1vmin;
   border-radius: 0 20vmin 0 0;
