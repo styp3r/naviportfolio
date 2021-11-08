@@ -1,6 +1,5 @@
 import React,  {useEffect, useState} from 'react';
 import Plus from '../images/plusSign.png';
-import InteractiveBackground from './InteractiveBackground';
 
 function Hero(){
 
@@ -29,7 +28,6 @@ function Hero(){
 
     return (        
             <div style = {{width: window.innerWidth, height: window.innerHeight }} className = "heroContainer">
-            <InteractiveBackground />
                 <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
