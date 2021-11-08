@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.heroContainer{
+  background: linear-gradient(45deg, #9933ff , #ffffff );
+}
+
 .heroContentContainer{
   position: absolute;
   left: 20vmax;
@@ -36,6 +40,10 @@ code {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   margin: 0;
+}
+
+.heroText1{
+  color: #9933ff;
 }
 
 .leftAlign{
