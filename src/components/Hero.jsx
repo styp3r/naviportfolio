@@ -22,7 +22,7 @@ function Hero(){
     }, 3000);
 
     useEffect(()=>{
-        setCount(count + 45);  //ENABLE THIS FOR THE ROTATION ANIMATION TO WORK 
+        //setCount(count + 45);  //ENABLE THIS FOR THE ROTATION ANIMATION TO WORK 
     }, [title]);
 
 
