@@ -28,7 +28,7 @@ function Hero(){
 
 
     return (        
-            <div style = {{width: window.innerWidth, height: window.innerHeight }} className = "heroContainer">
+            <div style = {{width: window.innerWidth, height: window.innerHeight }} id = "heroContainer">
                 <InteractiveContainer />
                 <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
