@@ -4,7 +4,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 code {
@@ -14,6 +13,10 @@ code {
 
 #heroContainer{
   background: linear-gradient(45deg, #9933ff , #ffffff );
+}
+
+#interactiveContainer{
+  overflow: hidden;
 }
 
 .heroContentContainer{
@@ -46,7 +49,7 @@ code {
 }
 
 .heroText1, .heroText2{
-  font-size: 8vmin;
+  font-size: 10vmin;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   margin: 0;
@@ -83,7 +86,7 @@ code {
   height: 30vmin;
   border: solid #ffffff;
   border-width: 1px;
-  z-index: 0;
+  z-index: 1;
   border-radius: 0.5vmin;
   animation: 0.5s linear expand, 0.4s 0.5s disappear;
   animation-fill-mode: forwards;
@@ -95,11 +98,12 @@ code {
     height: 0;
   }
   50%{
-    width: 41vmax;
+    width: 50vmax;
     height: 0;
   }
   100%{
-    height: 30vmin;
+    width: 50vmax;
+    height: 40vmin;
   }
 }
 
@@ -146,7 +150,7 @@ code {
     left: 30vmin;
     top: 5vmin;
     transform: rotate(90deg);
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
@@ -222,28 +226,126 @@ code {
   }
 }
 
-#circleExpand{
+#heroLine{
   position: absolute;
-  bottom: -50vmax;
-  left: -50vmax;
+  top: 28vmax;
+  left: 20vmax;
   width: 10vmin;
-  height: 10vmin;
-  border-radius: 100%;
+  opacity: 0;
+  z-index: 1;
+  height: 1vmin;
   background-color: #ffffff;
-  opacity: 0.1;
-  animation: 8s 2s infinite linear inflate;
+  border-radius: 5vmin;
+  animation: 15s 1s infinite grazeLine;
 }
 
-@keyframes inflate{
+@keyframes grazeLine{
+  0%, 100%{
+    opacity: 0.7;
+    width: 1.1vmin;
+    left: 20vmax;
+  }
+  50%{
+    opacity: 0.7;
+    left: 60vmax;
+    width: 10vmin;
+    background-color: #9933ff;
+  }
+}
+
+#blob1{
+  position: absolute;
+  left: 65%;
+  top: 10vmax;
+  width: 20vmin;
+  height: 20vmin;
+  transform-origin: 11vmin 11vmin;
+  background-color: #bf80ff; 
+  filter: blur(15px);
+  opacity: 0;
+  border-radius: 100%;
+  z-index: 0;
+  animation: 8s 5s blobAppear, 10s infinite rotateBlob;
+  animation-fill-mode: forwards;
+}
+
+#blob2{
+  position: absolute;
+  left: 70%;
+  top: 10vmax;
+  width: 40vmin;
+  height: 40vmin;
+  filter: blur(30px);
+  opacity: 0;
+  transform-origin: 21vmin 21vmin;
+  background-color: #6600cc;
+  border-radius: 100%;
+  z-index: 0;
+  animation: 7s 5s blobAppear, 13s infinite rotateBlobReverse;
+  animation-fill-mode: forwards;
+}
+
+#blob3{
+  position: absolute;
+  left: 60%;
+  top: 20vmax;
+  width: 30vmin;
+  height: 30vmin;
+  filter: blur(10px);
+  opacity: 0;
+  background-color: #d9b3ff;
+  border-radius: 100%;
+  z-index: 0;
+  transform-origin: 16vmin 16vmin;
+  animation: 6s 5s blobAppear, 9s infinite rotateBlob;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blobAppear{
   0%{
-    opacity: 0.1;
-    width: 0vmin;
-    height: 0vmin;
+    opacity: 0;
   }
   100%{
-    opacity: 0;
-    width: 200vmax;
-    height: 200vmax;
+    opacity: 0.8;
+  }
+}
+
+@keyframes rotateBlob{
+  0%, 100%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBlobReverse{
+  0%, 100%{
+    transform: rotate(360deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+}
+
+#darkModeToggle{
+  position: absolute;
+  right: -10vmin;
+  top: 2vmin;
+  width: 5vmin;
+  height: 5vmin;
+  background-color: #000000;
+  cursor: pointer;
+  animation: 1s 4s dropDownToggle;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropDownToggle{
+  0%{
+    right: -10vmin;
+  }
+  100%{
+    right: 2vmin;
   }
 }
 
