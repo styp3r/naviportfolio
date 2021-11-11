@@ -478,7 +478,7 @@ code {
   background-color: #ffffff;
   border-radius: 1vmin;
   opacity: 1;
-  animation: 2.5s infinite scrollDownScrollWheel;
+  animation: 2s infinite scrollDownScrollWheel;
 }
 
 @keyframes scrollDownScrollWheel{
@@ -486,11 +486,12 @@ code {
     margin: 0.5vmin 0 0 0;
     opacity: 1;
   }
-  40%{
+  50%{
     margin: 1.5vmin 0 0 0;
-    opacity: 0;
+    opacity: 1;
   }
   100%{
+    margin: 1.5vmin 0 0 0;
     opacity: 0;
   }
 }
