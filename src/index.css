@@ -121,7 +121,7 @@ code {
   left: 0;
   top: -10vmin;
   transform: rotate(45deg);
-  animation: 1s 1s crossReveal, 0.5s 2.3s crossRight;
+  animation: 1s 1s crossReveal, 0.5s 2.3s crossRight, 0.5s 5s crossLeft;
   animation-fill-mode: forwards;
 }
 
@@ -147,10 +147,37 @@ code {
     opacity: 1;
   }
   100%{
-    left: 30vmin;
-    top: 5vmin;
+    left: 40vmin;
+    top: 10vmin;
     transform: rotate(90deg);
     opacity: 0.5;
+  }
+}
+
+@keyframes crossLeft{
+  0%{
+    left: 40vmin;
+  }
+  100%{
+    left: 13vmin;
+  }
+}
+
+#heroCross1{
+  position: absolute;
+  top: -5vmin;
+  left: 18.5vmax;
+  opacity: 0.5;
+  animation: 1s 5s cross1Down;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cross1Down{
+  0%{
+    top: -5vmin;
+  }
+  100%{
+    top: 2vmin;
   }
 }
 
@@ -223,33 +250,6 @@ code {
   }
   50%{
     color: #007bb5;
-  }
-}
-
-#heroLine{
-  position: absolute;
-  top: 28vmax;
-  left: 20vmax;
-  width: 10vmin;
-  opacity: 0;
-  z-index: 1;
-  height: 1vmin;
-  background-color: #ffffff;
-  border-radius: 5vmin;
-  animation: 15s 1s infinite grazeLine;
-}
-
-@keyframes grazeLine{
-  0%, 100%{
-    opacity: 0.7;
-    width: 1.1vmin;
-    left: 20vmax;
-  }
-  50%{
-    opacity: 0.7;
-    left: 60vmax;
-    width: 10vmin;
-    background-color: #9933ff;
   }
 }
 
@@ -332,10 +332,17 @@ code {
   position: absolute;
   right: -10vmin;
   top: 2vmin;
-  width: 5vmin;
-  height: 5vmin;
-  background-color: #000000;
+  width: 4vmin;
+  height: 2.5vmin;
+  background-color: #ffffff;
   cursor: pointer;
+  border-radius: 5vmin;
+  border: solid aqua;
+  border-width: 0.5vmin;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   animation: 1s 4s dropDownToggle;
   animation-fill-mode: forwards;
 }
@@ -345,10 +352,172 @@ code {
     right: -10vmin;
   }
   100%{
-    right: 2vmin;
+    right: 4vmin;
   }
 }
 
+#sq{
+  position: absolute;
+  width: 6vmin;
+  height: 6vmin;
+  background-color: #000000;
+  transform-origin: 6vmin;
+  border-radius: 100%;
+  animation: 5s infinite rotateDark;
+}
+
+@keyframes rotateDark{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.fa-chevron-right{
+  position: absolute;
+  top: 20vmax;
+  left: 15vmax;
+  opacity: 0;
+  color: #ffffff;
+  transform-origin: 25vmax;
+  animation: 1s 5s arrowRightAppear, 0.5s 8s 1 rotateBottomLeft;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arrowRightAppear{
+  0%{
+    opacity: 0;
+    left: 13vmax;
+  }
+  100%{
+    opacity: 1;
+    left: 15vmax;
+  }
+}
+
+@keyframes rotateBottomLeft{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-45deg);
+  }
+}
+
+.fa-chevron-left{
+  position: absolute;
+  top: 20vmax;
+  right: 18vmax;
+  color: #ffffff;
+  opacity: 0;
+  transform-origin: -25vmax;
+  animation: 1s 5s arrowLeftAppear, 0.5s 8s 1 rotateTopRight;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arrowLeftAppear{
+  0%{
+    opacity: 0;
+    right: 18vmax;
+  }
+  100%{
+    opacity: 1;
+    right: 20vmax;
+  }
+}
+
+@keyframes rotateTopRight{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    color: #9933ff;
+    transform: rotate(-45deg);
+  }
+}
+
+#mouse{
+  position: absolute;
+  width: 3vmin;
+  height: 5vmin;
+  background-color: transparent;
+  bottom: 2vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5vmin;
+  border: solid #f2f2f2;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-content: center;
+  animation: 1s 7s 1 mouseAppear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mouseAppear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#scrollWheel{
+  width: 0.5vmin;
+  height: 1vmin;
+  margin: 0.5vmin 0 0 0;
+  background-color: #ffffff;
+  border-radius: 1vmin;
+  opacity: 1;
+  animation: 2.5s infinite scrollDownScrollWheel;
+}
+
+@keyframes scrollDownScrollWheel{
+  0%{
+    margin: 0.5vmin 0 0 0;
+    opacity: 1;
+  }
+  40%{
+    margin: 1.5vmin 0 0 0;
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+#bigCircle{
+  position: absolute;
+  left: 20%;
+  top: -65vmin;
+  width: 90vmax;
+  height: 90vmax;
+  opacity: 0;
+  filter: blur(7px);
+  animation: 6s 6s bigCircleAppear, 60s infinite linear rotateBigCircle;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bigCircleAppear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+@keyframes rotateBigCircle{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 
 
