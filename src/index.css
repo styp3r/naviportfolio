@@ -76,6 +76,10 @@ code {
   color: #f2f2f2;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
 #heroBox{
   position: absolute;
   top: 11vmax;
@@ -340,6 +344,7 @@ code {
   border: solid aqua;
   border-width: 0.5vmin;
   display: flex;
+  z-index: 1;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -450,6 +455,7 @@ code {
   border: solid #f2f2f2;
   display: flex;
   opacity: 0;
+  z-index: 1;
   justify-content: center;
   align-content: center;
   animation: 1s 7s 1 mouseAppear;
@@ -490,9 +496,9 @@ code {
 }
 
 #bigCircle{
-  position: absolute;
-  left: 20%;
-  top: -65vmin;
+  position: relative;
+  left: 15%;
+  top: -50vmin;
   width: 90vmax;
   height: 90vmax;
   opacity: 0;
