@@ -15,7 +15,9 @@ function InteractiveContainer(){
             <DarkModeToggle />
             <Arrows />
             <MouseScroll />
-            <BigCircle />
+            <div style = {{width: window.innerWidth, height: window.innerHeight }} id = "wrapper">
+                <BigCircle />
+            </div>
             </div>
         );
 }
