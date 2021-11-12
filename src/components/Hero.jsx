@@ -30,7 +30,7 @@ function Hero(){
     return (        
             <div style = {{width: window.innerWidth, height: window.innerHeight }} id = "heroContainer">
                 <InteractiveContainer />
-                <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
+                <h1 className = "heroHeader">Hi! I'm NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
                         <h1 id = "heroText1" className = "heroText1">Front End Developer</h1>
