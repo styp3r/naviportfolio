@@ -23,7 +23,7 @@ function Hero(){
     }, 3000);
 
     useEffect(()=>{
-        setCount(count + 45);  //ENABLE THIS FOR THE ROTATION ANIMATION TO WORK 
+        //setCount(count + 45);  //ENABLE THIS FOR THE ROTATION ANIMATION TO WORK 
     }, [title]);
 
 
@@ -33,8 +33,8 @@ function Hero(){
                 <h1 className = "heroHeader">NAVJYOT JAISWAL</h1>
                 <div className = "heroContentContainer">
                     <div className = "leftAlign">
-                        <h1 id = "heroText1" className = "heroText1">Front-End Developer</h1>
-                        <h1 className = "heroText2"><img id = "plus" width = "40" height= "40" src = {Plus}/><span id = "title"> {title}</span></h1>
+                        <h1 id = "heroText1" className = "heroText1">Front End Developer</h1>
+                        <h1 className = "heroText2"><img id = "plus" width = "40" height= "40" alt = "A rotating aqua colored plus graphic" src = {Plus}/><span id = "title"> {title}</span></h1>
                     </div>
                 </div>
             </div>
