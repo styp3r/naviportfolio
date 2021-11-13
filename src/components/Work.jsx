@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 
 function Work(){
+
     return (<div id = "workContainer">
         <h1 id = "workTitle">Some things I've worked on</h1>
         <ProjectItem title = "one" itemName = "Project .001"/>
