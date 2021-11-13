@@ -29,16 +29,16 @@ function DarkModeToggle(){
 
     function toggleDarkMode(){
         if(dark === 0){
+            document.getElementById("workTitle").style.color = "#ffffff";
             document.getElementById("heroText1").style.color = "#aa80ff";
             document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #262626 , #262626)";
-            //document.getElementById("blob1").style.backgroundColor = "#8c8c8c";
-            //document.getElementById("blob2").style.backgroundColor = "#595959";
+            document.getElementById("workContainer").style.backgroundColor = "#262626";
             setDark(1);
         } else {
+            document.getElementById("workTitle").style.color = "#000000";
             document.getElementById("heroText1").style.color = "#9933ff";
+            document.getElementById("workContainer").style.backgroundColor = "#ffffff";
             document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #9933ff , #ffffff)";
-            //document.getElementById("blob1").style.backgroundColor = "#bf80ff";
-            //document.getElementById("blob2").style.backgroundColor = "#6600cc";
             setDark(0);
         }
     }
