@@ -544,10 +544,7 @@ code {
   top: 10rem;
   width: 10rem;
   height: 20rem;
-  box-shadow: 0 2rem 3rem 1rem #cccccc;
   display: inline-block;
-  border: solid #e6e6e6;
-  border-width: 0.5px;
   margin: 5rem;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -563,13 +560,12 @@ code {
   text-align: left;
 }
 
-#insetGradient{
+#one, #two, #three{
   width: 100%;
   height: 100%;
-  opacity: 0.5;
   filter: blur(5px);
   border-radius: 0.5rem;
-  background-color: #999999;
+  background-color: #ccccff;
 }
 
 #gradientBlob{
