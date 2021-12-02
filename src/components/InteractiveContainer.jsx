@@ -4,7 +4,6 @@ import Blob from './Blob';
 import DarkModeToggle from './DarkModeToggle';
 import Arrows from './Arrows';
 import MouseScroll from './MouseScroll';
-import BigCircle from './BigCircle';
 
 function InteractiveContainer(){
 
@@ -15,9 +14,6 @@ function InteractiveContainer(){
             <DarkModeToggle />
             <Arrows />
             <MouseScroll />
-            <div style = {{width: window.innerWidth, height: window.innerHeight }} id = "wrapper">
-                <BigCircle />
-            </div>
             </div>
         );
 }
