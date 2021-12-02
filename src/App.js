@@ -1,6 +1,7 @@
 import './App.css';
 import Hero from './components/Hero';
 import Work from './components/Work';
+import Contact from './components/Contact';
 
 function App() {
 /*
@@ -17,6 +18,7 @@ function Parallax(e){
     <div className = "App">
     <Hero />
     <Work />
+    <Contact />
     </div>
   );
 }
