@@ -76,10 +76,6 @@ code {
   color: #ffffff;
 }
 
-#wrapper {
-  overflow: hidden;
-}
-
 #heroBox{
   position: absolute;
   top: 11vmax;
@@ -125,7 +121,7 @@ code {
   left: 0;
   top: -10vmin;
   transform: rotate(45deg);
-  animation: 1s 1s crossReveal, 0.5s 2.3s crossRight, 0.5s 5s crossLeft;
+  animation: 1s 0.5s crossReveal, 0.5s 1s crossRight, 0.5s 2s crossLeft;
   animation-fill-mode: forwards;
 }
 
@@ -172,7 +168,7 @@ code {
   top: -5vmin;
   left: 18.5vmax;
   opacity: 0.5;
-  animation: 0.5s 5s cross1Down;
+  animation: 0.5s 2s cross1Down;
   animation-fill-mode: forwards;
 }
 
@@ -192,7 +188,7 @@ code {
   font-size: 3vmin;
   left: 3vmin;
   top: -10vmin;
-  animation: 0.2s 2.5s dropDown;
+  animation: 0.2s 2s dropDown;
   animation-fill-mode: forwards;
 }
 
@@ -269,7 +265,7 @@ code {
   opacity: 0;
   border-radius: 100%;
   z-index: 0;
-  animation: 8s 5s blobAppear, 10s infinite rotateBlob;
+  animation: 8s 1s blobAppear, 10s infinite rotateBlob;
   animation-fill-mode: forwards;
 }
 
@@ -285,7 +281,7 @@ code {
   background-color: #6600cc;
   border-radius: 100%;
   z-index: 0;
-  animation: 7s 5s blobAppear, 13s infinite rotateBlobReverse;
+  animation: 7s 1s blobAppear, 13s infinite rotateBlobReverse;
   animation-fill-mode: forwards;
 }
 
@@ -301,7 +297,7 @@ code {
   border-radius: 100%;
   z-index: 0;
   transform-origin: 16vmin 16vmin;
-  animation: 6s 5s blobAppear, 9s infinite rotateBlob;
+  animation: 6s 1s blobAppear, 9s infinite rotateBlob;
   animation-fill-mode: forwards;
 }
 
@@ -336,8 +332,8 @@ code {
   position: absolute;
   right: -10vmin;
   top: 2vmin;
-  width: 4vmin;
-  height: 2.5vmin;
+  width: 3vmin;
+  height: 3vmin;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 5vmin;
@@ -348,7 +344,7 @@ code {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  animation: 1s 4s dropDownToggle;
+  animation: 1s 1s dropDownToggle;
   animation-fill-mode: forwards;
 }
 
@@ -387,7 +383,7 @@ code {
   opacity: 0;
   color: #ffffff;
   transform-origin: 25vmax;
-  animation: 1s 5s arrowRightAppear, 0.5s 8s 1 rotateBottomLeft;
+  animation: 1s 1s arrowRightAppear, 0.5s 2.5s 1 rotateBottomLeft;
   animation-fill-mode: forwards;
 }
 
@@ -418,7 +414,7 @@ code {
   color: #ffffff;
   opacity: 0;
   transform-origin: -25vmax;
-  animation: 1s 5s arrowLeftAppear, 0.5s 8s 1 rotateTopRight;
+  animation: 1s 1s arrowLeftAppear, 0.5s 2.5s 1 rotateTopRight;
   animation-fill-mode: forwards;
 }
 
@@ -458,7 +454,7 @@ code {
   z-index: 1;
   justify-content: center;
   align-content: center;
-  animation: 1s 7s 1 mouseAppear;
+  animation: 1s 4s 1 mouseAppear;
   animation-fill-mode: forwards;
 }
 
@@ -496,47 +492,11 @@ code {
   }
 }
 
-#bigCircle{
-  position: relative;
-  left: 15%;
-  top: -40rem;
-  width: 90vmax;
-  height: 90vmax;
-  opacity: 0;
-  filter: blur(7px);
-  animation: 6s 8s bigCircleAppear, 60s infinite linear rotateBigCircle;
-  animation-fill-mode: forwards;
-}
-
-@keyframes bigCircleAppear{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 0.5;
-  }
-}
-
-@keyframes rotateBigCircle{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
-
 #workContainer{
   position: relative;
   width: 100%;
   height: 50vmax;
   background-color: #ffffff;
-}
-
-#workTitle{
-  position: absolute;
-  left: 22rem;
-  top: 5rem;
 }
 
 #ProjectItemContainer{
@@ -600,6 +560,13 @@ code {
   background-color: #00ffcc;
   box-shadow: 0 0 4rem 1rem #00ffcc;
   border-radius: 100%;
+}
+
+#contactContainer{
+  position: relative;
+  width: 100%;
+  height: 50vmax;
+  background-color: #ffffff;
 }
 
 
