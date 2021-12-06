@@ -38,7 +38,7 @@ function DarkModeToggle(){
             document.getElementById("workTitle").style.color = "#000000";
             document.getElementById("heroText1").style.color = "#9933ff";
             document.getElementById("workContainer").style.backgroundColor = "#ffffff";
-            document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #9933ff , #ffffff)";
+            document.getElementById("heroContainer").style.background = "linear-gradient(20deg, #facd68, #fc76b3)";
             setDark(0);
         }
     }
