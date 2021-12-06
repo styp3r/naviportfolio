@@ -12,7 +12,7 @@ code {
 }
 
 #heroContainer{
-  background: linear-gradient(45deg, #9933ff , #ffffff );
+  background: linear-gradient(20deg, #facd68, #fc76b3);
 }
 
 #interactiveContainer{
@@ -56,7 +56,7 @@ code {
 }
 
 .heroText1{
-  color: #9933ff; 
+  color: #aa80ff; 
 }
 
 @keyframes blurToSharp{
@@ -257,31 +257,31 @@ code {
   position: absolute;
   left: 65%;
   top: 10vmax;
-  width: 20vmin;
-  height: 20vmin;
-  transform-origin: 11vmin 11vmin;
-  background-color: #bf80ff; 
-  filter: blur(15px);
+  width: 40vmin;
+  height: 40vmin;
+  transform-origin: 25vmin 25vmin;
+  background-color: #944dff;
+  filter: blur(30px);
   opacity: 0;
   border-radius: 100%;
   z-index: 0;
-  animation: 8s 1s blobAppear, 10s infinite rotateBlob;
+  animation: 8s 1s blobAppear, 25s infinite rotateBlobReverse;
   animation-fill-mode: forwards;
 }
 
 #blob2{
   position: absolute;
-  left: 70%;
-  top: 10vmax;
-  width: 40vmin;
-  height: 40vmin;
-  filter: blur(30px);
+  left: 75%;
+  top: 15vmax;
+  width: 30vmin;
+  height: 30vmin;
+  filter: blur(15px);
   opacity: 0;
-  transform-origin: 21vmin 21vmin;
-  background-color: #6600cc;
+  transform-origin: 20vmin 20vmin;
+  background-color: #c299ff;
   border-radius: 100%;
   z-index: 0;
-  animation: 7s 1s blobAppear, 13s infinite rotateBlobReverse;
+  animation: 7s 1s blobAppear, 20s infinite rotateBlobReverse;
   animation-fill-mode: forwards;
 }
 
@@ -289,14 +289,14 @@ code {
   position: absolute;
   left: 60%;
   top: 20vmax;
-  width: 30vmin;
-  height: 30vmin;
-  filter: blur(10px);
+  width: 20vmin;
+  height: 20vmin;
+  filter: blur(9px);
   opacity: 0;
-  background-color: #d9b3ff;
+  background-color: #b380ff;
   border-radius: 100%;
   z-index: 0;
-  transform-origin: 16vmin 16vmin;
+  transform-origin: 11vmin 11vmin;
   animation: 6s 1s blobAppear, 9s infinite rotateBlob;
   animation-fill-mode: forwards;
 }
@@ -306,7 +306,7 @@ code {
     opacity: 0;
   }
   100%{
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -337,7 +337,7 @@ code {
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 5vmin;
-  border: solid aqua;
+  border: solid #86e3ce;
   border-width: 0.5vmin;
   display: flex;
   z-index: 1;
