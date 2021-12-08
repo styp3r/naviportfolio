@@ -12,7 +12,7 @@ code {
 }
 
 #heroContainer{
-  background: linear-gradient(20deg, #facd68, #fc76b3);
+  background: linear-gradient(45deg, #00e5ff, #ffffff);
 }
 
 #interactiveContainer{
@@ -84,7 +84,7 @@ code {
   opacity: 1;
   width: 41vmax;
   height: 30vmin;
-  border: solid #ffffff;
+  border: solid #935dff;
   border-width: 1px;
   z-index: 1;
   border-radius: 0.5vmin;
@@ -144,13 +144,11 @@ code {
     left: 0;
     top: 0;
     transform: rotate(45deg);
-    opacity: 1;
   }
   100%{
     left: 40vmin;
     top: 10vmin;
     transform: rotate(90deg);
-    opacity: 0.5;
   }
 }
 
@@ -167,7 +165,6 @@ code {
   position: absolute;
   top: -5vmin;
   left: 18.5vmax;
-  opacity: 0.5;
   animation: 0.5s 2s cross1Down;
   animation-fill-mode: forwards;
 }
