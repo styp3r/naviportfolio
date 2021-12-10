@@ -21,18 +21,22 @@ function DarkModeToggle(){
             document.getElementById("darkModeToggle").style.border = "solid #ffffff";
             document.getElementById("sq").style.backgroundColor = "#00e5ff";
             document.getElementById("workTitle").style.color = "#ffffff";
+            document.getElementById("contactTitle").style.color = "#ffffff";
             document.getElementById("heroText1").style.color = "#aa80ff";
             document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #262626 , #262626)";
             document.getElementById("workContainer").style.background = "linear-gradient(45deg, #262626 , #262626)";
+            document.getElementById("contactContainer").style.background = "linear-gradient(45deg, #262626 , #262626)";
             setDark(1);
         } else {
             document.getElementById("darkModeToggle").style.border = "solid #00e5ff";
             document.getElementById("sq").style.backgroundColor = "#000000";
             document.getElementById("darkModeToggle").style.backgroundColor = "#ffffff";
             document.getElementById("workTitle").style.color = "#aa80ff";
+            document.getElementById("contactTitle").style.color = "#aa80ff";
             document.getElementById("heroText1").style.color = "#9933ff";
             document.getElementById("workContainer").style.background = "linear-gradient(135deg, #00e5ff, #ffffff)";
             document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #00e5ff, #ffffff)";
+            document.getElementById("contactContainer").style.background = "linear-gradient(45deg, #00e5ff, #ffffff)";
             setDark(0);
         }
     }
