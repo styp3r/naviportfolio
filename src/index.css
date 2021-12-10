@@ -121,7 +121,7 @@ code {
   left: 0;
   top: -10vmin;
   transform: rotate(45deg);
-  animation: 1s 0.5s crossReveal, 0.5s 1s crossRight, 0.5s 2s crossLeft;
+  animation: 1s 0.5s crossReveal, 0.5s 1s crossRight, 0.5s 2s crossLeft, 1s 5s crossDisappear;
   animation-fill-mode: forwards;
 }
 
@@ -161,11 +161,20 @@ code {
   }
 }
 
+@keyframes crossDisappear{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 #heroCross1{
   position: absolute;
   top: -5vmin;
   left: 18.5vmax;
-  animation: 0.5s 2s cross1Down;
+  animation: 0.5s 2s cross1Down, 1s 5s cross1Disappear;
   animation-fill-mode: forwards;
 }
 
@@ -175,6 +184,15 @@ code {
   }
   100%{
     top: 2vmin;
+  }
+}
+
+@keyframes cross1Disappear{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }
 
@@ -496,13 +514,15 @@ code {
 }
 
 #workTitle{
+  color: #aa80ff;
   margin: 0;
+  transform: translateY(5rem);
 }
 
 #ProjectItemContainer{
   position: relative;
   top: 10rem;
-  width: 10rem;
+  width: 20rem;
   height: 20rem;
   display: inline-block;
   margin: 5rem;
@@ -514,7 +534,7 @@ code {
 #itemTitle{
   position: absolute;
   bottom: 0.5rem;
-  left: 0.5rem;
+  left: 1rem;
   width: 7rem;
   color: #ffffff;
   text-align: left;
