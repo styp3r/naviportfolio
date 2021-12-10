@@ -29,7 +29,7 @@ function DarkModeToggle(){
             document.getElementById("darkModeToggle").style.border = "solid #00e5ff";
             document.getElementById("sq").style.backgroundColor = "#000000";
             document.getElementById("darkModeToggle").style.backgroundColor = "#ffffff";
-            document.getElementById("workTitle").style.color = "#000000";
+            document.getElementById("workTitle").style.color = "#aa80ff";
             document.getElementById("heroText1").style.color = "#9933ff";
             document.getElementById("workContainer").style.background = "linear-gradient(135deg, #00e5ff, #ffffff)";
             document.getElementById("heroContainer").style.background = "linear-gradient(45deg, #00e5ff, #ffffff)";
