@@ -199,7 +199,6 @@ code {
 #socialMediaIconsContainer{
   position: absolute;
   color: #ffffff;
-  letter-spacing: 5vmin;
   font-size: 3vmin;
   left: 3vmin;
   top: -10vmin;
@@ -217,7 +216,12 @@ code {
 }
 
 .fa-instagram{
+  margin: 0 5vmin 0 0;
   animation: 0.5s 3s glowInsta;
+}
+
+.fa-instagram:hover{
+  color: #ff0066;
 }
 
 @keyframes glowInsta{
@@ -230,7 +234,12 @@ code {
 }
 
 .fa-twitter{
+  margin: 0 5vmin 0 0;
   animation: 0.5s 3.1s glowTwitter;
+}
+
+.fa-twitter:hover{
+  color: #55acee;
 }
 
 @keyframes glowTwitter{
@@ -243,7 +252,12 @@ code {
 }
 
 .fa-github{
+  margin: 0 5vmin 0 0;
   animation: 0.5s 3.2s glowGithub;
+}
+
+.fa-github:hover{
+  color: #171515;
 }
 
 @keyframes glowGithub{
@@ -256,7 +270,12 @@ code {
 }
 
 .fa-linkedin{
+  margin: 0 5vmin 0 0;
   animation: 0.5s 3.3s glowLinkedin;
+}
+
+.fa-linkedin:hover{
+  color: #007bb5;
 }
 
 @keyframes glowLinkedin{
@@ -266,6 +285,10 @@ code {
   50%{
     color: #007bb5;
   }
+}
+
+.socialLink{
+  color: #ffffff;
 }
 
 #blob1{
@@ -595,4 +618,5 @@ code {
   margin: 0;
   transform: translateY(5rem);
 }
+
 
