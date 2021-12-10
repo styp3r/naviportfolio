@@ -1,7 +1,11 @@
 function Contact(){
+
+    let curlyLeft = "{";
+    let curlyRight = "}";
+
     return (
         <div id = "contactContainer">
-            <h1 className = "contactHeading">Let's talk!</h1>
+            <h1 id = "contactTitle">{curlyLeft} Let's talk! {curlyRight}</h1>
             <div></div>
         </div>
     );
