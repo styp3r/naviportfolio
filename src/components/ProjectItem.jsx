@@ -7,15 +7,15 @@ function ProjectItem(props){
     function handleMouseOver(){
         if(title == "one"){
             document.getElementById("one").style.transitionDuration = "0.5s";
-            document.getElementById("one").style.backgroundColor = "#666666";
+            document.getElementById("one").style.backgroundColor = "#b588f7";
         }
         if(title == "two"){
             document.getElementById("two").style.transitionDuration = "0.5s";
-            document.getElementById("two").style.backgroundColor = "#666666";
+            document.getElementById("two").style.backgroundColor = "#b588f7";
         }
         if(title == "three"){
             document.getElementById("three").style.transitionDuration = "0.5s";
-            document.getElementById("three").style.backgroundColor = "#666666";
+            document.getElementById("three").style.backgroundColor = "#b588f7";
         }
     }
 
